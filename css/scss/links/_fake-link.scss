@@ -1,0 +1,9 @@
+﻿%fake-link {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+    transition: .2s ease color;
+}
+
+.fake-link {
+    @extend %fake-link;
+}

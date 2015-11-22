@@ -1,0 +1,37 @@
+﻿.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 10;
+    display: none;
+    
+    &_content {
+        height: 100%;
+        margin: auto;
+        width: 550px;
+
+        &__center {
+            @include display-flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 655px;   
+        }
+    }
+    &_form {
+        
+    }
+    &_close {
+        font-size: 30px;
+        position: absolute;
+        top: 60px;
+        right: 85px;
+        text-decoration: none;
+        z-index: 1;
+    }
+    p:not([class]) {
+        margin: 0 0 40px;
+    }
+}

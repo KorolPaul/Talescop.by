@@ -1,0 +1,36 @@
+﻿%heading1 {
+    color: $heading_color;
+    font: bold 40px/44px $headings_font-family;
+}
+%heading2 {
+    color: $heading_color;
+    font: bold 30px/34px $headings_font-family;
+}
+%heading3 {
+    color: $heading_color;
+    font: bold 24px/28px $headings_font-family;
+}
+%heading4 {
+    color: $heading_color;
+    font: italic 20px/24px $default_font-family;
+}
+
+h1, 
+.heading-1 {
+    @extend %heading1;
+}
+h2,
+.heading-2 {
+    @extend %heading2;
+}
+h3,
+.heading-3 {
+    @extend %heading3;
+}
+h4,
+.heading-4 {
+    @extend %heading4;
+}
+
+
+

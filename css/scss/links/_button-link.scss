@@ -1,0 +1,18 @@
+﻿%button-link {
+    color: $link_color;
+    border: 1px solid #dbdfe5;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 5px 15px 4px;
+    text-decoration: none;
+
+    &:after {
+        content: "\276F";
+        font-size: 12px;
+        margin: 0 0 0 5px;
+    }
+}
+
+.button-link {
+    @extend %button-link;
+}

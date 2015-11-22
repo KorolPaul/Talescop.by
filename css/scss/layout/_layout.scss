@@ -1,0 +1,29 @@
+﻿body {
+    color: $default_color;
+    font: #{$default_font-size}/28px $default_font-family;
+}
+a {
+    color: $link_color;
+    transition: color .2s ease;
+
+    &:hover {
+        color: $link_color__hover;
+    }
+}
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+main li {
+    list-style: disc;
+    padding: 0 0 15px;
+}
+button, 
+input[type="button"], 
+input[type="submit"] {
+    color: $button_color;
+    background-color: $button_background;
+    border: none;
+}

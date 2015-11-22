@@ -1,0 +1,28 @@
+﻿input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background: $input_background;
+    border: 1px solid $input_border-color;
+    color: $input_color;
+    border-radius: 2px;
+    padding: 10px 15px;
+    transition: .2s ease border-color;
+
+    &:focus {
+        border-color: #000;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+    &::-webkit-input-placeholder {
+        color: $input_color;
+    }
+    &::-moz-placeholder {
+        color: $input_color;
+    }
+    &:-ms-input-placeholder
+    {
+        color: $input_color;
+    }
+}

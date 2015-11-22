@@ -1,0 +1,14 @@
+﻿.categories-menu {
+    float: left;
+
+    &_link {
+        @extend %border-link;
+        color: #282828;
+        font: bold 18px $headings_font-family;
+        margin: 0 42px 0 0;
+
+        &:hover {
+            color: #0067d1;
+        }
+    }
+}

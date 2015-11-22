@@ -1,0 +1,108 @@
+﻿.footer {
+    background: #000;
+
+    &_top {
+        @extend %clearfix;
+        background: #5e5e5e;
+        padding: 8px 0 12px;
+    }
+    &_bottom {
+        @extend %clearfix;
+        padding: 30px 0 65px;
+    }
+    &_newsletter {
+        float: left;
+    }
+    &_newsletter-label {
+        color: #dbdbdb;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    &_newsletter-input[type] {
+        background: #afafaf;
+        border: none;
+        margin: 0 20px 0 25px;
+        height: 17px;
+        vertical-align: middle;
+    }
+    &_newsletter-button[type] {
+        color: #fff;
+        background: #393939;
+        border-radius: 3px;
+        font-size: 18px;
+        padding: 8px 15px 9px;
+        vertical-align: middle;
+
+        &:hover {
+            background: #555;
+        }
+    }
+    &_copyright {
+        float: left;
+
+        p {
+            color: #a0a0a0;
+            margin: 0;
+            line-height: 18px;
+        }
+    }
+    &_site-map {
+        @extend %border-link;
+        color: #fff;
+
+        &:hover {
+            color: #ccc;
+        }
+    }
+    &_social {
+        float: right;
+        margin: 0 0 0 10%;
+    }
+    &_contacts {
+        float: right;
+        margin: 0 0 0 10%;
+    }
+    &_phone {
+        color: #fefefe;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0;
+    }
+    &_adress {
+        @extend %fake-link;
+        color: #fff;
+        position: relative;
+
+        &:before {
+            content: "";
+            background: url(../img/marker.png) no-repeat;
+            height: 20px;
+            width: 13px;
+            position: absolute;
+            top: -5px;
+            left: -25px;
+        }
+    }
+    &_up {
+        @extend %border-link;
+        color: #cacaca;
+        font-size: 15px;
+        line-height: normal;
+        margin: 12px 0 0;
+        float: right;
+        position: relative;
+
+        &:hover {
+            color: #fff;
+        }
+        &:after {
+            content: "\2191";
+            position: absolute;
+            right: -15px;
+        }
+    }
+}
+
+.pluso-more {
+    display: none !important;
+}

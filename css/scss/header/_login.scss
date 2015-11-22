@@ -1,0 +1,22 @@
+﻿.login {
+    float: right;
+
+    &_link {
+        @extend %fake-link;
+        color: #fff;
+        position: relative;
+
+        &:before {
+            content: "";
+            background: url(../img/door.png) no-repeat;
+            position: absolute;
+            height: 21px;
+            width: 15px;
+            top: 0px;
+            left: -30px;
+        }
+        &:hover {
+            color: #ccc;
+        }
+    }
+}

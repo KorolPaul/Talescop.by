@@ -1,0 +1,19 @@
+﻿.button {
+
+    border: 1px solid #000;
+    display: inline-block;
+    font: 16px $headings_font-family;
+
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease background-color, .2s ease color;
+
+    &:hover {
+
+        color: #fff;
+    }
+    &:active {
+        
+    }
+}

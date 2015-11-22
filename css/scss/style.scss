@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+
+@import "const";
+@import "templates";
+@import "placeholders";
+
+/*Form elements*/
+@import "form-elements/button";
+@import "form-elements/choose-button";
+@import "form-elements/input";
+@import "form-elements/search";
+@import "form-elements/textarea";
+@import "form-elements/label";
+
+/*Layout*/
+@import "layout/normalize";
+@import "layout/layout";
+@import "layout/holder";
+@import "layout/footer";
+@import "layout/headings";
+@import "layout/popup";
+@import "layout/content";
+@import "layout/page";
+@import "layout/breadcrumbs";
+
+/*Header*/
+@import "header/header";
+@import "header/cart";
+@import "header/login";
+@import "header/menu";
+@import "header/logo";
+@import "header/search";
+@import "header/categories-menu";
+
+/*Sidebar*/
+@import "sidebar/sidebar";
+@import "sidebar/catalog-menu";
+@import "sidebar/blog";
+@import "sidebar/advantages";
+
+/*Links*/
+@import "links/link";
+@import "links/fake-link";
+@import "links/bordered-link";
+@import "links/button-link";
+

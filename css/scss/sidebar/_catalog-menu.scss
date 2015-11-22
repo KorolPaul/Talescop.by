@@ -1,0 +1,40 @@
+﻿.catalog-menu {
+    background: $sidebar_background;
+    padding: $sidebar_padding;
+
+    &_title {
+        font: bold 18px $default_font-family;
+        margin: 0 0 10px;
+    }
+    &_link {
+        color: $default_color;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 10px 9px 11px;
+        text-decoration: none;
+
+        &:hover {
+            color: #000;
+        }
+        &__active {
+            background: #fbda2d;
+        }
+        .catalog-menu_sublist & {
+            font-size: 13px;
+            padding: 8px 9px 9px;
+            text-decoration: underline;
+        }
+    }
+    .catalog-menu_sublist li {
+        padding: 0 0 0 10px;
+        position: relative;
+
+        &:before {
+            content: "-";
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+    }
+}

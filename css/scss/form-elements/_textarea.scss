@@ -1,0 +1,32 @@
+﻿textarea {
+    @include border-box;
+    background: transparent;
+    border: 1px solid $input_border-color;
+    color: $input_color;
+    font: 12px $headings_font-family;
+    min-height: 100px;
+    overflow: auto;
+    padding: 6px 13px;
+    text-transform: uppercase;
+    resize: none;
+    transition: .2s ease border-color;
+    width: 100%;
+
+    &:focus {
+        border-color: #fff;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+    &::-webkit-input-placeholder {
+        color: $input_color;
+    }
+    &::-moz-placeholder {
+        color: $input_color;
+    }
+    &:-ms-input-placeholder
+    {
+        color: $input_color;
+    }
+}

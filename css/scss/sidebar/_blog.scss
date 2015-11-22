@@ -1,0 +1,27 @@
+﻿.blog {
+    
+    &_title {
+        font: bold 15px/21px $headings_font-family;
+        margin: 0 0 20px;
+    }
+    &_all {
+        @extend %button-link;
+        float: right;
+        margin: -4px 0 0;
+    }
+    &_date {
+        color: #b4b4b4;
+        font-size: 12px;
+        font-style: italic;
+        display: block;
+    }
+    &_article {
+        border-top: 1px solid #ebeef3;
+        padding: 25px 0;
+
+        p {
+            line-height: 20px;
+            margin: 0;
+        }
+    }
+}

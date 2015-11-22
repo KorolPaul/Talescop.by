@@ -1,0 +1,42 @@
+﻿.advantages {
+    background: $sidebar_background;
+    padding: $sidebar_padding;
+}
+.advantage {
+    color: #000;
+    line-height: 20px;
+    padding: 25px 0 20px;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: #e8ebef;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 100px;
+    }
+    &:first-child:before {
+        display: none;
+    }
+    &_icon {
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        display: block;
+        height: 55px;
+
+        &__recomendations {
+            background-image: url(../img/advantages/recomendations.png);
+        }
+        &__warranty {
+            background-image: url(../img/advantages/warranty.png);
+        }
+        &__delivery {
+            background-image: url(../img/advantages/delivery.png);
+        }
+        &__stock {
+            background-image: url(../img/advantages/stock.png);
+        }
+    }
+}
