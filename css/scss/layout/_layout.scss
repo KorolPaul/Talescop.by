@@ -1,6 +1,6 @@
 ﻿body {
     color: $default_color;
-    font: #{$default_font-size}/28px $default_font-family;
+    font: #{$default_font-size}/20px $default_font-family;
 }
 a {
     color: $link_color;
@@ -11,14 +11,36 @@ a {
     }
 }
 ul,
+ol,
 li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-main li {
-    list-style: disc;
-    padding: 0 0 15px;
+main ul li:not([class]) {
+    padding: 0 0 15px 45px;
+    position: relative;
+    &:before {
+        content: "\2022";
+        color: #0059c6;
+        font-size: 18px;
+        position: absolute;
+        left: 25px;
+        top: 0;
+    }
+}
+main ol li:not([class]) {
+    padding: 0 0 15px 40px;
+    position: relative;
+    counter-increment: i;
+    &:before {
+        content: counter(i);
+        color: #0059c6;
+        font-size: 14px;
+        position: absolute;
+        left: 20px;
+        top: 0;
+    }
 }
 button, 
 input[type="button"], 
@@ -26,4 +48,13 @@ input[type="submit"] {
     color: $button_color;
     background-color: $button_background;
     border: none;
+}
+td, 
+th {
+    padding: 8px 10px 8px 15px;
+    vertical-align: top;
+    text-align: left;
+}
+p {
+    margin: 0 0 20px;
 }

@@ -82,3 +82,8 @@
     -webkit-filter: url($url);
     filter: url($url);
 }
+@mixin invisible-text {
+    font-size: 0;
+    letter-spacing: 0;
+    color: transparent;
+}

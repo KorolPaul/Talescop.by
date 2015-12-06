@@ -1,0 +1,18 @@
+﻿.main-bottom {
+    @extend %clearfix;
+    margin: 45px 0 0;
+
+    &_left {
+        float: left;
+        width: 63%;
+    }
+    &_right {
+        float: right;
+        width: 32%;
+    }
+    &_heading {
+        font-size: 30px;
+        margin: 0 0 30px;
+        display: inline-block;
+    }
+}

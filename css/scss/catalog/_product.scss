@@ -1,0 +1,120 @@
+﻿$product_padding: 23px;
+$product-big_padding: 325px;
+
+.product {
+    box-sizing: border-box;
+    border: 1px solid $input_border-color;
+    float: left;
+    height: 510px;
+    margin: 0 2% 20px 0;
+    padding: 15px $product_padding;
+    position: relative;
+    width: 31%;
+    transition: .2s ease box-shadow;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+    .catalog__wide & {
+        width: 22%;
+    }
+    &__big {
+        padding-left: $product-big_padding;
+        width: 62%;
+
+        .catalog__wide & {
+            width: 48%;
+        }
+    }
+    &__full {
+        float: right;
+        border: none;
+        height: auto;
+        width: 45%;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &_image {
+        display: block;
+
+        .product__big & {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &_link {
+        font: 15px/20px $headings_font-family;
+        display: block;
+        margin: 15px 0 2px;
+    }
+    &_stock {
+        color: $heading_color;
+        background: #daf1cf;
+        display: inline-block;
+        padding: 2px 5px;
+        vertical-align: middle;
+
+        &__out {
+            background: #dfdfdf;
+        }
+    }
+    &_order-time {
+        font-size: 11px;
+    }
+    &_specs {
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0;
+    }
+    &_specs-value {
+        color: $heading_color;
+    }
+    &_description {
+        color: #878686;
+        font-size: 11px;
+        line-height: 14px;
+        margin: 10px 0 35px;
+    }
+    &_old-price {
+        position: absolute;
+        left: 23px;
+        bottom: 80px;
+        text-decoration: line-through;
+        color: #ff0000;
+
+        .product__big & {
+            left: $product-big_padding;
+        }
+    }
+    &_flag {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        background: #fc9e2f;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 1px 8px 5px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            border-style: solid;
+            border-width: 18px 18px 18px 8px;
+            border-color: transparent transparent transparent #fc9e2f;
+        }
+        &__hit {
+            background: #ff3c65;
+
+            &:after {
+                border-left-color: #ff3c65;
+            }
+        }
+    }
+}

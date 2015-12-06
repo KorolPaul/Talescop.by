@@ -1,0 +1,52 @@
+﻿.filters {
+    margin: 0 0 25px 0;
+
+    &_section-title {
+        @extend %heading5;
+        cursor: pointer;
+        display: inline-block; 
+        border-bottom: 1px dashed;
+        margin: 0 0 18px 20px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 8px;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #dbdfe5 transparent transparent transparent;
+        }
+    }
+    &_section {
+        border-bottom: 1px solid #ebeef3;
+        padding: 15px 0;
+
+        &:first-child {
+            border-top: 1px solid #ebeef3;
+        }
+    }
+    &_input {
+        border-radius: 6px;
+        border-color: #cccfd5;
+        width: 80px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset;
+
+        &__left {
+            text-align: right;
+        }
+    }
+    &_label {
+        display: block;
+        margin: 0 0 12px;
+    }
+    &_delimiter {
+        color: #6b6b6b;
+        font-weight: bold;
+        margin: 0 2px;
+    }
+}

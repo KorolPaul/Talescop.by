@@ -21,7 +21,13 @@
 @import "layout/popup";
 @import "layout/content";
 @import "layout/page";
+@import "layout/pages";
 @import "layout/breadcrumbs";
+@import "layout/main-banner";
+@import "layout/main-bottom";
+@import "layout/article";
+@import "layout/categories";
+@import "layout/tabs";
 
 /*Header*/
 @import "header/header";
@@ -44,3 +50,21 @@
 @import "links/bordered-link";
 @import "links/button-link";
 
+/*Other*/
+@import "other/documents";
+
+/*Catalog*/
+@import "catalog/catalog";
+@import "catalog/count";
+@import "catalog/filters";
+@import "catalog/product";
+@import "catalog/rating";
+@import "catalog/sort";
+@import "catalog/tags";
+@import "catalog/load-more";
+@import "catalog/price";
+@import "catalog/gallery";
+
+/*Plugins*/
+@import "plugins/range";
+@import "plugins/bxslider";

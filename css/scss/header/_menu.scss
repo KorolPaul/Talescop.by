@@ -22,7 +22,7 @@
 
         &:hover, 
         &__active {
-            color: #61e0a8;
+            color: $link_color__green;
         }
         &__opener {
             position: relative;

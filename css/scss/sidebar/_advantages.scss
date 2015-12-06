@@ -1,6 +1,13 @@
 ﻿.advantages {
     background: $sidebar_background;
+    margin: 0 0 40px;
     padding: $sidebar_padding;
+
+    &__inline{
+        background: transparent;
+        margin: 0 -5% 0 0;
+        padding: 0;
+    }
 }
 .advantage {
     color: #000;
@@ -8,6 +15,20 @@
     padding: 25px 0 20px;
     position: relative;
 
+    .advantages__inline & {
+        display: inline-block;
+        width: 30%;
+        margin: 0 2% 0 0;
+        font-size: 18px;
+        vertical-align: top;
+
+        p {
+            margin: 6px 0 0 90px;
+        }
+        &:before {
+            content: none;
+        }
+    }
     &:before {
         content: "";
         background: #e8ebef;
@@ -37,6 +58,11 @@
         }
         &__stock {
             background-image: url(../img/advantages/stock.png);
+        }
+
+        .advantages__inline & {
+            float: left;
+            width: 55px;
         }
     }
 }

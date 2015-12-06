@@ -1,0 +1,35 @@
+﻿.documents {
+    @extend %clearfix;
+    
+    &_item {
+        float: left;
+        list-style: none;
+        padding: 0 100px 25px 45px;
+        position: relative;
+        width: 275px;
+    }
+    &_icon {
+        @include invisible-text;
+        position: absolute;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 4px;
+        height: 28px;
+        width: 22px;
+        position: absolute;
+
+        &__text {
+            background-image: url(../img/documents/text.png);
+        }
+        &__table {
+            background-image: url(../img/documents/table.png);
+        }
+        &__pdf {
+            background-image: url(../img/documents/pdf.png);
+        }
+    }
+    &_size {
+        font-size: 12px;
+        display: block;
+    }
+}

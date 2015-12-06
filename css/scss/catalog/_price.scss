@@ -1,0 +1,50 @@
+﻿.price {
+    background: #ffefbb;
+    color: $heading_color;
+    font: bold 14px $default_font-family;
+    padding: 10px 12px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+    left: $product_padding;
+
+    &:after {
+        content: '';
+        background: #3aa672 url(../img/cart-light.png) no-repeat center center;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        z-index: -1;
+        transition: .3s ease-out right;            
+    }
+    &:hover:after {
+        right: -40px;
+    }
+
+    &_value {
+        font: bold 20px $default_font-family;
+
+        .product__full & { 
+            font-size: 24px;
+        }
+    }
+    .product__big & {
+        left: $product-big_padding;
+    }
+    .product__full & {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .blog & {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 20px 0 0;
+        display: inline-block;
+    }
+}
+
+    

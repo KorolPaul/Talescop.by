@@ -1,0 +1,12 @@
+﻿.article {
+    
+    &_title {
+        font: bold 24px/32px $headings_font-family;
+        display: inline-block;
+        margin: 0 0 15px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

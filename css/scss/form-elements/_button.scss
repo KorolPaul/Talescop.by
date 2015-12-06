@@ -1,19 +1,19 @@
 ﻿.button {
-
-    border: 1px solid #000;
+    background: $link_color;
+    border:none;
+    border-radius: 3px;
+    color: #fff;
     display: inline-block;
-    font: 16px $headings_font-family;
-
-    padding: 15px 50px;
+    font: 15px $headings_font-family;
+    padding: 8px 25px;
     text-decoration: none;
-    text-transform: uppercase;
     transition: .2s ease background-color, .2s ease color;
 
     &:hover {
-
+        background: #0060c2;
         color: #fff;
     }
-    &:active {
-        
+    &__disabled {
+        background: #dadada;
     }
 }

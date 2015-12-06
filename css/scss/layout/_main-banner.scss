@@ -1,0 +1,84 @@
+﻿.main-banner {
+    color: #fff;
+
+    &_section {
+        width: 23.7%;
+        height: 230px;
+        position: relative;
+        margin: 0 0 20px;
+        float: left;
+
+        &__big {
+            float: left;
+            margin: 0 20px 0 0;
+            height: 480px;
+            width: 74.5%;
+            box-sizing: border-box;
+            padding: 80px 28px;
+        }
+    }
+    &_image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+    &_title {
+        position: absolute;
+        top: 28px;
+        left: 28px;
+        padding: 2px 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &__pink {
+            background: #ff3c78;
+        }
+        &__purple {
+            background: #664ed6;
+        }
+        &__green {
+            background: #3aa672;
+        }
+    }
+    &_heading {
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        font: bold 70px/64px $headings_font-family;
+        display: inline-block;
+        margin: 0 0 10px;
+    }
+    &_text {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    &_links {
+        position: absolute;
+        left: 28px;
+        bottom: 50px;
+    }
+    &_link {
+        @extend %border-link;
+        font: 20px $headings_font-family;
+        margin: 0 40px 0 0;
+        color: #fff;
+        position: relative;
+
+        &:hover {
+            color: $link_color__green;
+        }
+        &:after,
+        &_link:hover:after {
+            content: "\25CF";
+            color: #fff;
+            position: absolute;
+            top: 2px;
+            right: -27px;
+        }
+        &:last-child:after {
+            content: none;
+        }
+    }
+}

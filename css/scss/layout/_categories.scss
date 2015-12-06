@@ -1,0 +1,31 @@
+﻿.categories {
+    display: inline-block;
+    margin: 0 20px 0 30px;
+    vertical-align: top;
+
+    &_link {
+        text-decoration: none;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 7px;
+        font-size: 18px;
+        margin: 0 10px;
+        min-width: 18px;
+        text-align: center;
+
+        &__active,
+        &__active:hover {
+            background: #fbda2d;
+            text-decoration: none;
+            color: #000;
+
+            span {
+                border: none !important;
+            }
+        }
+
+        span {
+            @extend %fake-link;
+        }
+    }
+}

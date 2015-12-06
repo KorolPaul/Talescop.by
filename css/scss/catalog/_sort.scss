@@ -1,0 +1,31 @@
+﻿.sort {
+    margin: 0 0 15px;
+
+    &_title {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 15px 0 0;
+    }
+    &_item {
+        border-radius: 2px;
+        text-decoration: none;
+        padding: 8px 15px;
+        color: $default_color;
+
+        &__active, 
+        &__active:hover {
+            color: #000;
+            background: #dcedf7;
+
+        }
+    }
+    &_link {
+        @extend %fake-link;
+        border-style: none none dashed;
+        font-size: 13px;
+
+        .sort_item__active & {
+            border: none;
+        }
+    }
+}

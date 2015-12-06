@@ -1,0 +1,28 @@
+﻿.rating {
+    display: inline-block;
+    margin: 0 15px 5px 0;
+
+    &_star {
+        @include invisible-text;
+        cursor: pointer;
+        background: url(../img/star.png) no-repeat;
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        filter: grayscale(100%);
+        vertical-align: middle;
+        transition: filter .2s ease;
+
+        &:hover {
+            filter: brightness(1.5);
+        }
+        &__filled {
+            filter: none;
+        }
+    }
+    &_total {
+        display: inline-block;
+        margin: 0 0 0 2px;
+        vertical-align: middle;
+    }
+}

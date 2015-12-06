@@ -12,7 +12,11 @@
 }
 %heading4 {
     color: $heading_color;
-    font: italic 20px/24px $default_font-family;
+    font: bold 18px/22px $default_font-family;
+}
+%heading5 {
+    color: $heading_color;
+    font: bold 15px/19px $default_font-family;
 }
 
 h1, 
@@ -29,6 +33,10 @@ h3,
 }
 h4,
 .heading-4 {
+    @extend %heading4;
+}
+h5,
+.heading-5 {
     @extend %heading4;
 }
 

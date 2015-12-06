@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Телескопы от ХАЧА</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="holder">
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li>
+                            <a class="menu_link" href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a class="menu_link" href="#">Как заказать</a>
+                        </li>
+                        <li>
+                            <a class="menu_link menu_link__active" href="#">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a class="menu_link menu_link__opener" href="#">Помошь</a>
+                            <ul class="menu_sublist">
+                                <li>
+                                    <a class="menu_link" href="#">Подпункт 1</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu_link" href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cart">
+                    <a href="#" class="cart_icon">cart</a>
+                    В корзине
+                    <a class="cart_link" href="#">0 товаров</a> на
+                    <span class="cart_total">0 р</span>.
+                </div>
+                <div class="login">
+                    <a href="#" class="login_link">Войти с паролем</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_center">
+            <div class="holder">
+                <a class="logo" href="/">
+                    Telescop.by
+                </a>
+                <p class="header_delivery">
+                    Бесплатная доставка<br />
+                    в Старые дорого и <a href="#" class="fake-link">другие города</a>
+                </p>
+                <div class="header_phones">
+                    <span class="header_phone-number">+375 (29) 390-32-12</span>
+                    <span class="header_phone-number">+375 (29) 584-95-26</span>
+                    <a href="#" class="fake-link">Перезвоните мне</a>
+                </div>
+                <div class="search">
+                    <input class="search_input" type="text" value="" placeholder="Например, детский микроскоп" />
+                    <a href="#" class="search_icon">find</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="holder">
+                <div class="categories-menu">
+                    <a href="" class="categories-menu_link">Телескопы</a>
+                    <a href="" class="categories-menu_link">Микроскопы</a>
+                    <a href="" class="categories-menu_link">Бинокли</a>
+                    <a href="" class="categories-menu_link">Лупы</a>
+                    <a href="" class="categories-menu_link">Аксессуары</a>
+                </div>
+                <a class="bordered-link" href="#">Как выбрать телескоп</a>
+            </div>
+        </div>
+    </header>
+    <section class="page">
+        <div class="holder">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs_link">Главная</a>
+                <a href="#" class="breadcrumbs_link">Телескопы</a>
+                <span class="breadcrumbs_page">Любительские телескопы</span>
+            </div>
+            <h1>
+                Любительские телескопы
+                <sup class="count">46</sup>
+            </h1>
+            <aside class="sidebar sidebar__left">
+                <div class="catalog-menu">
+                    <h4 class="catalog-menu_title">Телескопы</h4>
+                    <ul class="catalog-menu_list">
+                        <li>
+                            <a class="catalog-menu_link" href="#">детские</a>
+                        </li>
+                        <li>
+                            <a class="catalog-menu_link catalog-menu_link__active" href="#">любительские</a>
+                            <ul class="catalog-menu_sublist">
+                                <li>
+                                    <a class="catalog-menu_link" href="#">для начинающих любителей</a>
+                                </li>
+                                <li>
+                                    <a class="catalog-menu_link" href="#">для продвинутых любителей</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="catalog-menu_link" href="#">профессиональные</a>
+                        </li>
+                    </ul>
+                </div>
+                <h5>Выберите параметры</h5>
+                <div class="filters">
+                    <div class="filters_section">
+                        <span class="filters_section-title">Цена</span>
+                        <div class="filters_content">
+                            <input class="filters_input filters_input__left" type="text" name="name" value=" " />
+                            <span class="filters_delimiter">—</span>
+                            <input class="filters_input" type="text" name="name" value=" " />
+                            <div class="range"></div>
+                            <script>
+                                $(".range").ionRangeSlider({
+                                    type: "double",
+                                    min: 2340000,
+                                    max: 160700000,
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="filters_section">
+                        <span class="filters_section-title">Производитель</span>
+                        <div class="filter_content">
+                            <input type="checkbox" name="name" id="check1" value=" " />
+                            <label class="filters_label" for="check1">Veber</label>
+                            <input type="checkbox" name="name" id="check2" value=" " />
+                            <label class="filters_label" for="check2">Celestron </label>
+                            <input type="checkbox" name="name" id="check3" value=" " />
+                            <label class="filters_label" for="check3">Levenhuk </label>
+                            <input type="checkbox" name="name" id="check4" value=" " />
+                            <label class="filters_label" for="check4">Sky Watcher</label>
+                        </div>
+                    </div>
+                    <a class="load-more" href="#">Показать еще 3 параметра</a>
+                </div>
+                <div class="advantages">
+                    <div class="advantage">
+                        <span class="advantage_icon advantage_icon__recomendations"></span>
+                        <p>Нас рекомендуют пользователи <a href="Onliner.by">Onliner.by</a> и <a href="#">Яндекс.Маркет</a></p>
+                    </div>
+                    <div class="advantage">
+                        <span class="advantage_icon advantage_icon__warranty"></span>
+                        <p><a href="#">Официальная гарантия</a> на всю технику</a></p>
+                    </div>
+                    <div class="advantage">
+                        <span class="advantage_icon advantage_icon__delivery"></span>
+                        <p><a href="#">Бесплаетная доставка</a> в 120 городов Беларуси></p>
+                    </div>
+
+                    <div class="advantage">
+                        <span class="advantage_icon advantage_icon__stock"></span>
+                        <p>В наличии <a href="#">867 товаров</a> по лучшим ценам</p>
+                    </div>
+                </div>
+                <a href="#" class="banner">
+                    <img src="img/banner.jpg" alt="" />
+                </a>
+            </aside>
+            <main class="content">
+                <div class="tags">
+                    <span class="tags_title">Популярное в категории</span>
+                    <a class="tags_link" href="#">самый крутой телескоп</a>
+                    <a class="tags_link" href="#">подзорная труба</a>
+                    <a class="tags_link" href="#">переносной телескоп</a>
+                    <a class="tags_link" href="#">телескоп на балкон</a>
+                </div>
+                <div class="sort">
+                    <span class="sort_title">Сортировать</span>
+                    <a href="#" class="sort_item sort_item__active">
+                        <span class="sort_link">по популярности</span>
+                    </a>
+                    <a href="#" class="sort_item">
+                        <span class="sort_link">сначала дешевые</span>
+                    </a>
+                    <a href="#" class="sort_item">
+                        <span class="sort_link">сначала дорогие</span>
+                    </a>
+                </div>
+
+                <div class="catalog">
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-1.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп Celestron PowerSeeker 80 EQ</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled">1</span>
+                            <span class="rating_star rating_star__filled">2</span>
+                            <span class="rating_star rating_star__filled">3</span>
+                            <span class="rating_star rating_star__filled">4</span>
+                            <span class="rating_star">5</span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Телескоп для любителей звездного неба и начинающих астрономов. 80-мм объектив собирает на 75% больше света, чем 70-мм модели, поэтому вы увидите более качественную и яркую картинку.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <a class="product_old-price" href="#">4 210 000 руб.</a>
+                        <span class="product_flag">%</span>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-2.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп MEADE 114EQ-ASTR</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled">1</span>
+                            <span class="rating_star">2</span>
+                            <span class="rating_star">3</span>
+                            <span class="rating_star">4</span>
+                            <span class="rating_star">5</span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock product_stock__out">Под заказ</span>
+                        <span class="product_order-time">от 14 дней</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Замечательный подарок для тех, кто только начинает знакомство со звездным небом. 60-мм объектив покажет наблюдателю огромное количество лунных кратеров, морей и гор, крупные планеты Солнечной системы. Немецкая сборка гарантирует высокое качество прибора.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <span class="product_flag product_flag__hit">ХИТ</span>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-3.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп Sky-Watcher Dob 10 Retractable</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star"></span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Телескоп для любителей звездного неба и начинающих астрономов. 80-мм объектив собирает на 75% больше света, чем 70-мм модели, поэтому вы увидите более качественную и яркую картинку.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <span class="product_old-price">14 210 000 руб</span>
+                        <span class="product_flag">%</span>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-4.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп Celestron NexStar 130 SLT (с автонаведением)</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star"></span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Телескоп для любителей звездного неба и начинающих астрономов. 80-мм объектив собирает на 75% больше света, чем 70-мм модели, поэтому вы увидите более качественную и яркую картинку.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <span class="product_old-price">14 210 000 руб</span>
+                        <span class="product_flag">%</span>
+                    </div>
+                    <div class="product product__big">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-big.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп Celestron NexStar 130 SLT (с автонаведением)</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star"></span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Телескоп для любителей звездного неба и начинающих астрономов. 80-мм объектив собирает на 75% больше света, чем 70-мм модели, поэтому вы увидите более качественную и яркую картинку.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">13 450 000</span> руб.
+                        </a>
+                        <span class="product_old-price">14 210 000 руб</span>
+                        <span class="product_flag">%</span>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-5.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп Celestron PowerSeeker 80 EQ</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star"></span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Телескоп для любителей звездного неба и начинающих астрономов. 80-мм объектив собирает на 75% больше света, чем 70-мм модели, поэтому вы увидите более качественную и яркую картинку.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <a class="product_old-price" href="#">4 210 000 руб.</a>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-6.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп MEADE 114EQ-ASTR</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star"></span>
+                            <span class="rating_star"></span>
+                            <span class="rating_star"></span>
+                            <span class="rating_star"></span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Замечательный подарок для тех, кто только начинает знакомство со звездным небом. 60-мм объектив покажет наблюдателю огромное количество лунных кратеров, морей и гор, крупные планеты Солнечной системы. Немецкая сборка гарантирует высокое качество прибора.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <span class="product_flag product_flag__hit">ХИТ</span>
+                    </div>
+                    <div class="product">
+                        <a href="#">
+                            <img class="product_image" src="img/temp/telescop-7.jpg" alt="Alternate Text" />
+                        </a>
+                        <a class="product_link" href="#">Телескоп Sky-Watcher Dob 10 Retractable</a>
+                        <div class="rating">
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star rating_star__filled"></span>
+                            <span class="rating_star"></span>
+                            <div class="rating_total">(6)</div>
+                        </div>
+                        <span class="product_stock">В наличии</span>
+                        <p class="product_specs">
+                            Объектив: <span class="product_specs-value">80 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+                        </p>
+                        <p class="product_specs">
+                            Полезное увеличение: <span class="product_specs-value">160x</span>
+                        </p>
+                        <p class="product_description">
+                            Телескоп для любителей звездного неба и начинающих астрономов. 80-мм объектив собирает на 75% больше света, чем 70-мм модели, поэтому вы увидите более качественную и яркую картинку.
+                        </p>
+                        <a class="price" href="#">
+                            <span class="price_value">3 450 000</span> руб.
+                        </a>
+                        <span class="product_old-price">14 210 000 руб</span>
+                    </div>
+                </div>
+
+                <div class="pages">
+                    <a href="#" class="pages_prev pages_prev__disabled"><</a>
+                    <a class="pages_link pages_link__active" href="#">1</a>
+                    <a class="pages_link" href="#">2</a>
+                    <a class="pages_link" href="#">3</a>
+                    <span>...</span>
+                    <a class="pages_link" href="#">1488</a>
+                    <a href="#" class="pages_next">></a>
+                </div>
+                <p>
+                    Хотите купить телескоп в Минске? Ищете запоминающийся подарок, а может мечтали о телескопе многие годы? Мы тоже любим звездное небо, поэтому специально для вас собрали в каталоге наиболее интересные модели. Для начинающих
+                    и опытных астрономов, для детей, подарочные и расширенные наборы. У нас действительно большой выбор, актуальные цены и наличие товара на складе.
+                </p>
+                <p>
+                    Как купить телескоп в Минске? Выберите интересующую модель, либо оформите заказ по телефону +375 29 390-32-12.
+                    Мы бесплатно доставим ваш заказ в любую точку Минска. Как купить телескоп в Беларуси? Мы доставляем товары по всей стране! Укажите подробный адрес и курьерская служба доставит телескоп в любой город Беларуси в течение 3 дней!
+                </p>
+            </main>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="holder">
+                <form class="footer_newsletter">
+                    <label class="footer_newsletter-label">Подпишитесь и будьте в курсе новинок и распродаж</label>
+                    <input class="footer_newsletter-input" type="email" value="" />
+                    <input class="footer_newsletter-button" type="submit" value="Подписаться" />
+                </form>
+                <a href="#" class="footer_up">В начало страницы</a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="holder">
+                <div class="footer_copyright">
+                    <p>2013-2015 © Telescop.by</p>
+                    <p>Оказание услуг ИП Обухович Н.С. УНП: 591414022.</p>
+                    <p>Свидетельство выдано Волковыским РИК 25-03-2013.</p>
+                    <p>Регистрация в Торговом реестре 25-03-13</p>
+                    <a class="footer_site-map" href="#">Карта сайта</a>
+                </div>
+                <div class="footer_social">
+                    <script type="text/javascript">
+                        (function () {
+                            if (window.pluso) if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso == undefined) {
+                                window.ifpluso = 1;
+                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                s.type = 'text/javascript'; s.charset = 'UTF-8'; s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                var h = d[g]('body')[0];
+                                h.appendChild(s);
+                            }
+                        })();</script>
+                    <div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=06" data-services="facebook,twitter,google,odnoklassniki,vkontakte"></div>
+                    <br />
+                    <img src="img/temp/rambler.png" alt="top-100" />
+                </div>
+                <div class="footer_contacts">
+                    <a href="#" class="footer_adress">г. Минск, ул. Восточная, 129, оф. 134</a>
+                    <p class="footer_phone">+375 (29) 390-32-12</p>
+                    <p class="footer_phone">+375 (29) 584-95-26</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
