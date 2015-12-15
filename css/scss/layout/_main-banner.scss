@@ -2,12 +2,18 @@
     color: #fff;
 
     &_section {
+        color: #fff;
         width: 23.7%;
         height: 230px;
         position: relative;
         margin: 0 0 20px;
         float: left;
+        transition: .2s ease opacity;
 
+        &:hover {
+            color: #fff;
+            opacity: .8;
+        }
         &__big {
             float: left;
             margin: 0 20px 0 0;
@@ -15,7 +21,12 @@
             width: 74.5%;
             box-sizing: border-box;
             padding: 80px 28px;
+
+            &:hover {
+                opacity: 1;
+            }
         }
+        
     }
     &_image {
         position: absolute;
@@ -49,6 +60,11 @@
         font: bold 70px/64px $headings_font-family;
         display: inline-block;
         margin: 0 0 10px;
+        transition: .2s ease opacity;
+
+        &:hover {
+            opacity: .8;
+        }
     }
     &_text {
         font-size: 17px;

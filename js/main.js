@@ -15,6 +15,9 @@ $(function () {
     $('.slider').bxSlider({
         mode: 'vertical',
         pager: false,
-        slideMargin: 5
+        slideMargin: 5,
+        minSlides: 4
     });
+
+    $('.gallery_image').elevateZoom();
 });

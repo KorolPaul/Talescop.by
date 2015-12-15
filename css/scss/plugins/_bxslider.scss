@@ -54,19 +54,6 @@
 	width: 100%;
 }
 
-/* LOADER */
-
-.bx-wrapper .bx-loading {
-	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2000;
-}
-
 /* PAGER */
 
 .bx-wrapper .bx-pager {
@@ -107,12 +94,12 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url(../img/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	background: url(../img/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
