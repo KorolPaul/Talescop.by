@@ -12,6 +12,7 @@ $(function () {
         })
     });
 
+    /*Product images*/
     $('.slider').bxSlider({
         mode: 'vertical',
         pager: false,
@@ -19,5 +20,15 @@ $(function () {
         minSlides: 4
     });
 
+    $('.slider_link').click(function (e) {
+        e.preventDefault();
+        $('.gallery_image').attr('src', $(this).attr('href'));
+    });
+
     $('.gallery_image').elevateZoom();
+
+    $('.product_specs-all').click(function (e) {
+        e.preventDefault();
+        $(this).hide().next('.product_specs-hide').slideToggle(300);
+    });
 });
