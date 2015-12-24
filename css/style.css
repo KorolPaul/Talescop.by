@@ -1964,7 +1964,8 @@ h4,
   left: 0;
 }
 
-.blog .price {
+.blog .price,
+.accessoirs .price {
   position: relative;
   top: 0;
   left: 0;
@@ -1990,6 +1991,26 @@ h4,
 
 .accessoirs {
   clear: both;
+}
+
+.accessoirs_item {
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display: inline-block;
+  min-height: 230px;
+  padding: 20px;
+  width: 20%;
+  vertical-align: middle;
+}
+
+.accessoirs_price {
+  display: inline-block;
+  width: 20%;
+}
+
+.accessoirs_sign {
+  font-weight: bold;
+  font-size: 36px;
 }
 
 /*Plugins*/

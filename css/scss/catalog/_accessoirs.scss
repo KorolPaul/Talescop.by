@@ -1,3 +1,21 @@
 ﻿.accessoirs {
     clear: both;
+
+    &_item  {
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+        box-sizing: border-box;
+        display: inline-block;
+        min-height: 230px;
+        padding: 20px;
+        width: 20%;
+        vertical-align: middle;
+    }
+    &_price {
+        display: inline-block;
+        width: 20%;
+    }
+    &_sign {
+        font-weight: bold;
+        font-size: 36px;
+    }
 }
