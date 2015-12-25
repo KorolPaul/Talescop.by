@@ -11,6 +11,11 @@ $(function () {
         $('.fade').fadeOut(200);
         $('.popup').fadeOut(200);
     });
+    $('.price').click(function (e) {
+        e.preventDefault();
+        $('.fade').show();
+        $('.js-cart').show();
+    });
 
     /*Catalog*/
     $('.disabled').click(function (e) {
