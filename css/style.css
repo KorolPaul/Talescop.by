@@ -3,12 +3,12 @@
 /*Fonts*/
 /*Inputs*/
 /*Sidebar*/
-.footer_top, .footer_bottom, .page, .main-bottom, .header_top, .header_center, .header_bottom, .documents, .catalog {
+.footer_top, .footer_bottom, .page, .main-bottom, .header_top, .header_center, .header_bottom, .documents, .catalog, .product-wrapper {
   clear: both;
   zoom: 1;
 }
 
-.footer_top:after, .footer_bottom:after, .page:after, .main-bottom:after, .header_top:after, .header_center:after, .header_bottom:after, .documents:after, .catalog:after {
+.footer_top:after, .footer_bottom:after, .page:after, .main-bottom:after, .header_top:after, .header_center:after, .header_bottom:after, .documents:after, .catalog:after, .product-wrapper:after {
   clear: both;
   content: ".";
   display: block;
@@ -20,6 +20,19 @@
 .footer_site-map, .footer_up, .breadcrumbs_link, .main-banner_link, .tabs_link, .categories-menu_link {
   border-bottom: 1px solid;
   text-decoration: none;
+}
+
+.fade, .popup {
+  animation: .2s ease fade-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*Form elements*/
@@ -42,6 +55,20 @@
 
 .button__disabled {
   background: #dadada;
+}
+
+.button__light {
+  background: #fff;
+  color: #727272;
+}
+
+.button__light:hover {
+  background: #ccc;
+  color: #fff;
+}
+
+.popup .button {
+  font-family: Arial, Helvetica;
 }
 
 .choose-button {
@@ -807,47 +834,6 @@ h4,
   font: bold 15px/19px Arial, Helvetica;
 }
 
-.popup {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  overflow: auto;
-  z-index: 10;
-  display: none;
-}
-
-.popup_content {
-  height: 100%;
-  margin: auto;
-  width: 550px;
-}
-
-.popup_content__center {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 655px;
-}
-
-.popup_close {
-  font-size: 30px;
-  position: absolute;
-  top: 60px;
-  right: 85px;
-  text-decoration: none;
-  z-index: 1;
-}
-
-.popup p:not([class]) {
-  margin: 0 0 40px;
-}
-
 .content {
   overflow: hidden;
 }
@@ -1096,7 +1082,8 @@ h4,
 
 .tabs_link {
   font: bold 24px "Roboto Slab", serif;
-  margin: 0 55px 0 0;
+  display: inline-block;
+  margin: 0 55px 55px 0;
 }
 
 .tabs_link:hover {
@@ -1510,7 +1497,7 @@ h4,
   color: #fff;
 }
 
-.footer_adress, .categories_link span, .cart_link, .login_link, .fake-link, .product_fake-link, .product_specs-all, .sort_link, .load-more {
+.footer_adress, .categories_link span, .cart_link, .login_link, .fake-link, .product_fake-link, .product_specs-all, .sort_link, .load-more, .popup_link {
   border-bottom: 1px dotted;
   text-decoration: none;
   transition: .2s ease color;
@@ -1634,6 +1621,11 @@ h4,
 .filters_label {
   display: block;
   margin: 0 0 12px;
+}
+
+.filters_label.disabled {
+  cursor: default;
+  opacity: .6;
 }
 
 .filters_delimiter {
@@ -1990,27 +1982,82 @@ h4,
 }
 
 .accessoirs {
+  background: #fafafa;
   clear: both;
+  margin: 0 0 50px;
+  padding: 22px;
 }
 
 .accessoirs_item {
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   display: inline-block;
   min-height: 230px;
-  padding: 20px;
+  padding: 20px 20px 10px;
+  width: 20%;
+  vertical-align: middle;
+  position: relative;
+  transition: .2s ease all;
+}
+
+.accessoirs_item:after {
+  content: '';
+  border: 1px solid #e7ebec;
+  color: #3aa672;
+  font-size: 22px;
+  line-height: 24px;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.accessoirs_item__active:after {
+  content: "\2714";
+}
+
+.accessoirs_item:hover {
+  opacity: .8;
+  transform: scale(1.03);
+}
+
+.accessoirs_price {
+  color: #000;
+  font-size: 15px;
+  margin: 30px 0 0;
+  display: inline-block;
   width: 20%;
   vertical-align: middle;
 }
 
-.accessoirs_price {
+.accessoirs_price-value {
+  font-size: 24px;
+  font-weight: bold;
   display: inline-block;
-  width: 20%;
+  margin: 10px 0 0;
+}
+
+.accessoirs_img {
+  display: block;
+  height: 95px;
+  margin: 20px auto 15px;
+  width: 60%;
+}
+
+.accessoirs_link {
+  font-weight: bold;
 }
 
 .accessoirs_sign {
   font-weight: bold;
   font-size: 36px;
+  margin: 0 13px;
+  vertical-align: middle;
 }
 
 /*Plugins*/
@@ -2228,7 +2275,7 @@ h4,
   float: left;
   width: 85px;
   position: relative;
-  margin: 0 10px 0 0;
+  margin: 20px 10px 0 0 !important;
   padding: 0;
   *zoom: 1;
 }
@@ -2241,7 +2288,7 @@ h4,
 /** THEME
 ===================================*/
 .bx-wrapper .bx-viewport {
-  margin: 20px 0;
+  margin: 20px 0 20px;
   background: #fff;
   height: 480px !important;
   /*fix other elements on the page moving (on Chrome)*/
@@ -2388,4 +2435,97 @@ h4,
   display: block;
   font-size: .85em;
   padding: 10px;
+}
+
+/*Popup*/
+.fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 30px 30px 25px;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  max-width: 580px;
+}
+
+.popup_close {
+  color: #ababab;
+  font-size: 24px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  text-decoration: none;
+}
+
+.popup_close:hover {
+  color: #000;
+}
+
+.popup_title {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup_title__big {
+  font: 30px "Roboto Slab", serif;
+  margin: 0 0 10px;
+}
+
+.popup_subtitle {
+  color: #000;
+  font-size: 15px;
+}
+
+.popup_explanation {
+  display: block;
+  font-style: italic;
+  margin: 5px 0 15px;
+}
+
+.popup_note {
+  border-top: 1px solid #dbdfe5;
+  font-size: 13px;
+  margin: 35px 0 0;
+  padding: 20px 0 0;
+}
+
+.popup_link {
+  display: inline-block;
+  margin: 15px 20px 0 0;
+}
+
+.popup_image {
+  float: left;
+  width: 110px;
+  margin: 0 30px 30px;
+}
+
+.popup_bottom {
+  clear: both;
+  text-align: center;
+}
+
+.popup_specs {
+  margin: 10px 0;
+}
+
+.popup_price {
+  color: #000;
+}
+
+.popup_price-value {
+  font-weight: bold;
+  font-size: 20px;
 }

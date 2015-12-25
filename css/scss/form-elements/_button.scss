@@ -16,4 +16,17 @@
     &__disabled {
         background: #dadada;
     }
+    &__light {
+        background: #fff;
+        color: $default_color;
+
+        &:hover {
+        background: #ccc;
+            color: #fff;
+        }
+    }
+
+    .popup & {
+        font-family: $default_font-family;
+    }
 }

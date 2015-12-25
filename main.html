@@ -55,12 +55,12 @@
                 </a>
                 <p class="header_delivery">
                     Бесплатная доставка<br />
-                    в Старые дорого и <a href="#" class="fake-link">другие города</a>
+                    в Старые дорого и <a href="#" class="fake-link" id="js-city">другие города</a>
                 </p>
                 <div class="header_phones">
                     <span class="header_phone-number">+375 (29) 390-32-12</span>
                     <span class="header_phone-number">+375 (29) 584-95-26</span>
-                    <a href="#" class="fake-link">Перезвоните мне</a>
+                    <a href="#" class="fake-link" id="js-call">Перезвоните мне</a>
                 </div>
                 <div class="search">
                     <input class="search_input" type="text" value="" placeholder="Например, детский микроскоп" />
@@ -437,5 +437,55 @@
             </div>
         </div>
     </footer>
+    <div class="fade"></div>
+    <div class="popup js-call">
+        <a href="#" class="popup_close">✕</a>
+        <p class="popup_title">Номер телефона</p>
+        <input type="text" value="" size="40" />
+        <span class="popup_explanation">Например, +375 29 123 45 67</span>
+        <a href="#" class="button">Перезвоните мне</a>
+    </div>
+    <div class="popup js-city">
+        <a href="#" class="popup_close">✕</a>
+        <p class="popup_title popup_title__big">Выберите свой город</p>
+        <p class="popup_subtitle">
+            Мы доставляем заказы по всей Беларуси.
+            <span class="popup_subtitle-important">Бесплатно!</span>
+        </p>
+        <input type="text" value="" size="60" />
+        <a href="#" class="button">Сохранить</a>
+        <a href="#" class="popup_link">Минск</a>
+        <a href="#" class="popup_link">Брест</a>
+        <a href="#" class="popup_link">Старые Дороги</a>
+        <p class="popup_note">Выбор города поможет предоставить актуальную информацию о  ближайшей доставке в ваш город. Это поможет сохранить больше свободного времени для вас!</p>
+    </div>
+    <div class="popup js-cart" style="display: block;">
+        <a href="#" class="popup_close">✕</a>
+        <p class="popup_title popup_title__big">Товар добавлен в корзину!</p>
+        <a href="#">
+            <img class="popup_image" alt="Alternate Text" src="img/temp/telescop-2.jpg">
+        </a>
+        <a href="#" class="product_link">Телескоп MEADE 114EQ-ASTR</a>
+        <div class="popup_specs">
+            <p class="product_specs">
+                Объектив: <span class="product_specs-value">80 мм</span>
+            </p>
+            <p class="product_specs">
+                Фокусное расстояние: <span class="product_specs-value">900 мм</span>
+            </p>
+            <p class="product_specs">
+                Полезное увеличение: <span class="product_specs-value">160x</span>
+            </p>
+        </div>
+        <p class="popup_price">
+            <span class="popup_price-value">3 450 000</span>
+            руб.
+        </p>
+        <div class="popup_bottom">
+            <a href="#" class="button button__light">Продолжить покупки</a>
+            <a href="#" class="button button__light">Подобрать аксессуары</a>
+            <a href="#" class="button">Оформить заказ</a>
+        </div>
+    </div>
 </body>
 </html>

@@ -18,7 +18,6 @@
 @import "layout/holder";
 @import "layout/footer";
 @import "layout/headings";
-@import "layout/popup";
 @import "layout/content";
 @import "layout/page";
 @import "layout/pages";
@@ -70,3 +69,7 @@
 /*Plugins*/
 @import "plugins/range";
 @import "plugins/bxslider";
+
+/*Popup*/
+@import "popup/fade";
+@import "popup/popup";

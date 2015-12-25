@@ -18,7 +18,7 @@
     float: left;
     width: 85px;
 	position: relative;
-	margin: 0 10px 0 0;
+	margin: 20px 10px 0 0 !important;
 	padding: 0;
 	*zoom: 1;
 }
@@ -32,7 +32,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-    margin: 20px 0;
+    margin: 20px 0 20px;
 	background: #fff;
     height: 480px !important;
 	

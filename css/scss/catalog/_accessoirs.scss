@@ -1,21 +1,71 @@
 ﻿.accessoirs {
+    background: #fafafa;
     clear: both;
+    margin: 0 0 50px;
+    padding: 22px;
 
     &_item  {
-        box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+        background: #fff;
+        cursor: pointer;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
         box-sizing: border-box;
         display: inline-block;
         min-height: 230px;
-        padding: 20px;
+        padding: 20px 20px 10px;
+        width: 20%;
+        vertical-align: middle;
+        position: relative;
+        transition: .2s ease all;
+
+        &:after {
+            content: '';
+            border: 1px solid $input_border-color;
+            color: #3aa672;
+            font-size: 22px;
+            line-height: 24px;
+            position: absolute;
+            top: 10px;
+            left: 13px;
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        &__active:after {
+            content: "\2714";
+        }
+        &:hover {
+            opacity: .8;
+            transform: scale(1.03);
+        }
+    }
+    &_price {
+        color: #000;
+        font-size: 15px;
+        margin: 30px 0 0;
+        display: inline-block;
         width: 20%;
         vertical-align: middle;
     }
-    &_price {
+    &_price-value {
+        font-size: 24px;
+        font-weight: bold;
         display: inline-block;
-        width: 20%;
+        margin: 10px 0 0;
+    }
+    &_img {
+        display: block;
+        height: 95px;
+        margin: 20px auto 15px;
+        width: 60%;
+    }
+    &_link {
+        font-weight: bold;
     }
     &_sign {
         font-weight: bold;
         font-size: 36px;
+        margin: 0 13px;
+        vertical-align: middle;
     }
 }

@@ -43,6 +43,11 @@
     &_label {
         display: block;
         margin: 0 0 12px;
+
+        &.disabled {
+            cursor: default;
+            opacity: .6;
+        }
     }
     &_delimiter {
         color: #6b6b6b;

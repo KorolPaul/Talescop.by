@@ -155,3 +155,8 @@ $product-big_padding: 325px;
         display: block;
     }
 }
+
+
+.product-wrapper {
+    @extend %clearfix;
+}

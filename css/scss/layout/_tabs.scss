@@ -4,7 +4,8 @@
     &_link {
         @extend %border-link;
         font: bold 24px $headings_font-family;
-        margin: 0 55px 0 0;
+        display: inline-block;
+        margin: 0 55px 55px 0;
 
         &:hover {
             color: $link_color__green;
