@@ -1,6 +1,6 @@
 ﻿.main-bottom {
     @extend %clearfix;
-    margin: 45px 0 0;
+    margin: 45px 0 30px;
 
     &_left {
         float: left;
@@ -12,7 +12,7 @@
     }
     &_heading {
         font-size: 30px;
-        margin: 0 0 30px;
+        margin: 0 0 20px;
         display: inline-block;
     }
 }

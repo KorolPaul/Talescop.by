@@ -9,7 +9,7 @@
     letter-spacing: -0.31em;
     word-spacing: -0.43em;
 }
-@mixin inline-block-optimized($font-size: $font-size, $line-height: normal) {
+@mixin inline-block-optimized($font-size: $default_font-size, $line-height: normal) {
     font-size: $font-size;
     letter-spacing: normal;
     line-height: $line-height;

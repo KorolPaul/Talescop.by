@@ -6,7 +6,7 @@
         cursor: pointer;
         display: inline-block; 
         border-bottom: 1px dashed;
-        margin: 0 0 18px 20px;
+        margin: 0 0 12px 20px;
         position: relative;
 
         &:before {
@@ -19,6 +19,9 @@
             border-color: #dbdfe5 transparent transparent transparent;
         }
     }
+    &_content {
+        padding: 0 0 0 20px;
+    }
     &_section {
         border-bottom: 1px solid #ebeef3;
         padding: 15px 0;
@@ -27,18 +30,17 @@
             border-top: 1px solid #ebeef3;
         }
     }
-    &_input {
-        border-radius: 6px;
+    &_input[type] {
+        border-radius: 4px;
         border-color: #cccfd5;
-        width: 80px;
+        width: 77px;
         font-size: 14px;
         font-weight: bold;
         padding: 5px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset;
-
-        &__left {
-            text-align: right;
-        }
+    }
+    &_input__left {
+        text-align: right;
     }
     &_label {
         display: block;

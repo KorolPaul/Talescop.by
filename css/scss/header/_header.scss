@@ -13,15 +13,22 @@
         @extend %clearfix;
         background: #fafafa;
         border-bottom: 2px solid #dbdfe5;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, .2) inset;
-        padding: 25px 0;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .15) inset;
+        padding: 30px 0;
         text-align: right;
+
+        &__main {
+            background: transparent;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .15) inset;
+            border: none;
+            padding-bottom: 10px;
+        }
     }
     &_delivery {
         float: left;
         color: #616161;
         line-height: 18px;
-        margin: 18px 0 0;
+        margin: 11px 0 0;
     }
     &_phones {
         float: right;
@@ -31,6 +38,7 @@
     &_phone-number {
         color: #000;
         font-size: 20px;
+        line-height: 26px;
         font-weight: bold;
         display: block;
     }

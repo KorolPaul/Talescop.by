@@ -7,20 +7,20 @@ $product-big_padding: 325px;
     float: left;
     height: 510px;
     margin: 0 2% 20px 0;
-    padding: 15px $product_padding;
+    padding: 27px $product_padding 15px;
     position: relative;
     width: 31%;
     transition: .2s ease box-shadow;
 
     &:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     }
     .catalog__wide & {
-        width: 22%;
+        width: 22.9%;
     }
     &__big {
         padding-left: $product-big_padding;
-        width: 62%;
+        width: 64%;
 
         .catalog__wide & {
             width: 48%;
@@ -30,7 +30,7 @@ $product-big_padding: 325px;
         float: right;
         border: none;
         height: auto;
-        width: 45%;
+        width: 44%;
 
         &:hover {
             box-shadow: none;
@@ -47,9 +47,14 @@ $product-big_padding: 325px;
         }
     }
     &_link {
-        font: 15px/20px $headings_font-family;
+        font: bold 15px/20px $headings_font-family;
         display: block;
         margin: 15px 0 2px;
+
+        .product__big & {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
     &_fake-link {
         @extend %fake-link;
@@ -63,8 +68,9 @@ $product-big_padding: 325px;
         color: $heading_color;
         background: #daf1cf;
         display: inline-block;
-        padding: 2px 5px;
-        vertical-align: middle;
+        font-size: 11px;
+        padding: 0px 5px;
+        vertical-align: -4px;
 
         &__out {
             background: #dfdfdf;
@@ -72,11 +78,18 @@ $product-big_padding: 325px;
     }
     &_order-time {
         font-size: 11px;
+        vertical-align: -4px;
     }
     &_specs {
         font-size: 12px;
         line-height: 15px;
         margin: 0;
+
+        .product__big &,
+        .product__full & {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
     &_specs-value {
         color: $heading_color;
@@ -93,6 +106,10 @@ $product-big_padding: 325px;
         font-size: 11px;
         line-height: 14px;
         margin: 10px 0 35px;
+
+        .product__big & {
+            font-size: 12px;
+        }
     }
     &_old-price {
         position: absolute;
@@ -148,11 +165,14 @@ $product-big_padding: 325px;
     }
     &_features {
         color: $heading_color;
-        margin: 30px 0 0;
+        margin: 35px 0 0;
     }
     &_light-text {
         color: $default_color;
         display: block;
+    }
+    &_title {
+        margin-bottom: 5px;
     }
 }
 

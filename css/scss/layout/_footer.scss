@@ -4,7 +4,7 @@
     &_top {
         @extend %clearfix;
         background: #5e5e5e;
-        padding: 8px 0 12px;
+        padding: 10px 0 12px;
     }
     &_bottom {
         @extend %clearfix;
@@ -23,6 +23,7 @@
         border: none;
         margin: 0 20px 0 25px;
         height: 17px;
+        width: 280px;
         vertical-align: middle;
     }
     &_newsletter-button[type] {
@@ -39,6 +40,7 @@
     }
     &_copyright {
         float: left;
+        margin: 8px 0 0;
 
         p {
             color: #a0a0a0;
@@ -56,7 +58,15 @@
     }
     &_social {
         float: right;
-        margin: 0 0 0 10%;
+        margin: 0 0 0 16%;
+
+        a {
+            opacity: .8;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
     &_contacts {
         float: right;
@@ -82,6 +92,9 @@
             top: -5px;
             left: -25px;
         }
+        & + .footer_phone {
+            margin-top: 15px;
+        }
     }
     &_up {
         @extend %border-link;
@@ -105,4 +118,7 @@
 
 .pluso-more {
     display: none !important;
+}
+.pluso-wrap {
+    padding: 0 0 15px !important;
 }

@@ -18,7 +18,7 @@ li {
     padding: 0;
 }
 main ul li:not([class]) {
-    padding: 0 0 15px 45px;
+    padding: 0 0 5px 45px;
     position: relative;
     &:before {
         content: "\2022";
@@ -30,7 +30,7 @@ main ul li:not([class]) {
     }
 }
 main ol li:not([class]) {
-    padding: 0 0 15px 40px;
+    padding: 0 0 20px 40px;
     position: relative;
     counter-increment: i;
     &:before {

@@ -22,15 +22,19 @@ $(function () {
         e.preventDefault();
     });
 
+    $('.filters_section-title').click(function () {
+        $(this).next().stop().slideToggle(200);
+    });
+
     /*TABS*/
     $(".tabs_link").click(function (e) {
         e.preventDefault();
-        var tab = $(this).index() + 1;
+        var tab = $(this).index();
         $(".tabs_link").removeClass("tabs_link__active");
-        $(this).addClass(".tabs_link__active");
+        $(this).addClass("tabs_link__active");
 
-        $(".tabs_content").fadeOut(500, function () {
-            $(".tabs_content:nth("+tab+")").fadeIn(500);
+        $(".tabs_content").stop().fadeOut(500, function () {
+            $(".tabs_content:nth(" + tab + ")").stop().fadeIn(500);
         })
     });
 

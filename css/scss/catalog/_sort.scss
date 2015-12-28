@@ -1,5 +1,5 @@
 ﻿.sort {
-    margin: 0 0 15px;
+    margin: 0 0 23px;
 
     &_title {
         font-size: 13px;
@@ -9,14 +9,15 @@
     &_item {
         border-radius: 2px;
         text-decoration: none;
-        padding: 8px 15px;
+        padding: 8px 10px;
         color: $default_color;
 
         &__active, 
         &__active:hover {
             color: #000;
             background: #dcedf7;
-
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     &_link {

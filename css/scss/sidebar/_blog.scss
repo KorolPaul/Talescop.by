@@ -1,23 +1,24 @@
 ﻿.blog {
     
     &__products {
-        margin: 50px 0 0;
+        margin: 65px 0 0;
     }
     &_title {
         font: bold 15px/21px $headings_font-family;
         display: inline-block;
-        margin: 0 0 20px;
+        margin: 0 0 12px;
 
         .blog__big & {
             font-size: 18px;
             line-height: 24px;
+            font-weight: normal;
             margin-bottom: 8px;
         }
     }
     &_all {
         @extend %button-link;
         float: right;
-        margin: -4px 0 0;
+        margin: 1px 0 0 20px;
     }
     &_date {
         color: #b4b4b4;
@@ -28,7 +29,7 @@
     }
     &_article {
         border-top: 1px solid #ebeef3;
-        padding: 25px 0;
+        padding: 10px 0 30px;
 
         .blog__big & {
             padding-bottom: 0;
@@ -39,12 +40,19 @@
             }
         }
         p:not([class]) {
-            line-height: 20px;
-            margin: 8px 0 3px;
+            line-height: 18px;
+            margin: 8px 0 5px;
 
             .blog__products & {
                 font-size: 11px;
                 line-height: 14px;
+            }
+        }
+        img {
+            margin: 10px 0 12px;
+
+            .blog__products & {
+                margin: 0;
             }
         }
     }
@@ -53,6 +61,6 @@
     }
     &_author {
         font-weight: bold;
-        margin: 0;
+        margin: 3px 0 0;
     }
 }

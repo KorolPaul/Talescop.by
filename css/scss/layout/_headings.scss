@@ -1,6 +1,7 @@
 ﻿%heading1 {
     color: $heading_color;
     font: bold 40px/44px $headings_font-family;
+    margin: 16px 0 36px;
 }
 %heading2 {
     color: $heading_color;
@@ -17,6 +18,7 @@
 %heading5 {
     color: $heading_color;
     font: bold 15px/19px $default_font-family;
+    margin: 0 0 10px;
 }
 
 h1, 
@@ -37,7 +39,7 @@ h4,
 }
 h5,
 .heading-5 {
-    @extend %heading4;
+    @extend %heading5;
 }
 
 

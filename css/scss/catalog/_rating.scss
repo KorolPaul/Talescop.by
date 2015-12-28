@@ -1,12 +1,14 @@
 ﻿.rating {
+    @include inline-block-wrapper;
     display: inline-block;
-    margin: 0 15px 5px 0;
+    margin: 0 10px 5px 0;
 
     &_star {
         @include invisible-text;
         cursor: pointer;
         background: url(../img/star.png) no-repeat;
         display: inline-block;
+        margin: 0 2px 0 0;
         height: 14px;
         width: 14px;
         filter: grayscale(100%);
@@ -21,8 +23,14 @@
         }
     }
     &_total {
+        @include inline-block-optimized;
         display: inline-block;
         margin: 0 0 0 2px;
         vertical-align: middle;
+        font-size: 12px;
+    }
+
+    .product__full & {
+        margin: 0 0 15px;
     }
 }

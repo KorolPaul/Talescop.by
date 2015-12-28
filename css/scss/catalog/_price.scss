@@ -1,8 +1,9 @@
 ﻿.price {
     background: #ffefbb;
     color: $heading_color;
+    display: inline-block;
     font: bold 14px $default_font-family;
-    padding: 10px 12px;
+    padding: 7px 12px 6px;
     text-decoration: none;
     position: absolute;
     bottom: 25px;

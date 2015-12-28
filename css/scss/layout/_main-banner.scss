@@ -1,4 +1,5 @@
 ﻿.main-banner {
+    @extend %clearfix;
     color: #fff;
 
     &_section {
