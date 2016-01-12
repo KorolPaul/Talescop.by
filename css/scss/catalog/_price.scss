@@ -20,7 +20,8 @@
         z-index: -1;
         transition: .3s ease-out right;            
     }
-    &:hover:after {
+    &:hover:after,
+    .product__full &:after {
         right: -40px;
     }
 

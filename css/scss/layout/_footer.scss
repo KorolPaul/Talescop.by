@@ -59,6 +59,7 @@
     &_social {
         float: right;
         margin: 0 0 0 16%;
+        line-height: 0;
 
         a {
             opacity: .8;
@@ -114,11 +115,7 @@
             right: -15px;
         }
     }
-}
-
-.pluso-more {
-    display: none !important;
-}
-.pluso-wrap {
-    padding: 0 0 15px !important;
+    img {
+        display: block;
+    }
 }

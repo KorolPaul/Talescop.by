@@ -4,8 +4,21 @@
     padding: $sidebar_padding;
 
     &_title {
+        cursor: pointer;
         font: bold 18px $default_font-family;
         margin: 0 0 10px;
+        position: relative;
+
+        &:after {
+            content: '';
+            top: 12px;
+            left: 8px;
+            position: relative;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #dbdfe5 transparent transparent transparent;
+            vertical-align: middle;
+        }
     }
     &_link {
         color: $default_color;

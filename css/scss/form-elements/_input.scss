@@ -1,6 +1,7 @@
 ﻿input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea {
     background: $input_background;
     border: 1px solid $input_border-color;
     color: $input_color;

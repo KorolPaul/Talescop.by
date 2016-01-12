@@ -1,19 +1,17 @@
 ﻿textarea {
     @include border-box;
-    background: transparent;
+    background: $input_background;
     border: 1px solid $input_border-color;
     color: $input_color;
-    font: 12px $headings_font-family;
-    min-height: 100px;
-    overflow: auto;
-    padding: 6px 13px;
-    text-transform: uppercase;
-    resize: none;
+    border-radius: 2px;
+    padding: 10px 15px;
+    height: 125px;
     transition: .2s ease border-color;
-    width: 100%;
+    resize: none;
+    width: 480px;
 
     &:focus {
-        border-color: #fff;
+        border-color: #000;
     }
 
     &::-moz-focus-inner {

@@ -28,6 +28,7 @@
 @import "layout/categories";
 @import "layout/tabs";
 @import "layout/about";
+@import "layout/caption";
 
 /*Header*/
 @import "header/header";
@@ -49,6 +50,7 @@
 @import "links/fake-link";
 @import "links/bordered-link";
 @import "links/button-link";
+@import "links/social";
 
 /*Other*/
 @import "other/documents";
@@ -71,6 +73,7 @@
 /*Plugins*/
 @import "plugins/range";
 @import "plugins/bxslider";
+@import "plugins/magnific-popup";
 
 /*Popup*/
 @import "popup/fade";

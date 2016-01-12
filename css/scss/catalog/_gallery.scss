@@ -2,4 +2,38 @@
     float: left;
     margin: 25px 0;
     width: 50%;
+
+    &__inline {
+        @extend %clearfix;
+        width: 100%;
+    }
+    &_link {
+        border: 1px solid $input_border-color;
+        border-radius: 3px;
+        float: left;
+        position: relative;
+
+        &:after {
+            content: '';
+            background: url(../img/loop.png) no-repeat;
+            height: 20px;
+            width: 22px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            transition: .2s ease filter;
+        }
+        &:hover:after {
+            filter: grayscale(100%);
+        }
+    }
+    &_thumbnail {
+        float: left;
+        margin: 0 3% 0 0;
+        width: 30%;
+
+        img {
+            width: 100%;
+        }
+    }
 }

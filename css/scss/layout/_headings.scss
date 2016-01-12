@@ -36,6 +36,10 @@ h3,
 h4,
 .heading-4 {
     @extend %heading4;
+
+    .tabs_content & {
+        margin-bottom: 8px;
+    }
 }
 h5,
 .heading-5 {

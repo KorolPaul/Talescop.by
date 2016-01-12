@@ -1,0 +1,22 @@
+﻿.social {
+    @include invisible-text;
+    background: url(../img/social.png) no-repeat;
+    display: inline-block;
+    margin: 0 10px 20px 0;
+    height: 26px;
+    width: 26px;
+    transition: .2s ease opacity;
+
+    &__twitter {
+        background-position: -27px 0;
+    }
+    &__fb {
+        background-position: 0 0;
+    }
+    &__vk {
+        background-position: -80px 0;
+    }
+    &__google {
+        background-position: -54px 0;
+    }
+}
