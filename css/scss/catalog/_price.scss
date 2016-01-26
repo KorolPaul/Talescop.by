@@ -34,6 +34,9 @@
     }
     .product__big & {
         left: $product-big_padding;
+        @include tablet {
+            left: $product_padding;
+        }
     }
     .product__full & {
         position: relative;

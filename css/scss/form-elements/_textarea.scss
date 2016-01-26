@@ -9,6 +9,7 @@
     transition: .2s ease border-color;
     resize: none;
     width: 480px;
+    max-width: 100%;
 
     &:focus {
         border-color: #000;

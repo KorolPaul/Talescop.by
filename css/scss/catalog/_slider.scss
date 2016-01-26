@@ -1,5 +1,7 @@
 ﻿.slider {
-
+    @include media(620px) {
+        display: none;
+    }
     &_link {
         border: 1px solid $input_border-color;
         display: block;
@@ -8,5 +10,6 @@
     }
     &_image {
         cursor: pointer; 
+        width: 68px;
     }
 }

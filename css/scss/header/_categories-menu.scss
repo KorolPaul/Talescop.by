@@ -1,12 +1,20 @@
 ﻿.categories-menu {
     float: left;
     margin: -5px 0 0;
+    text-align: left;
+    @include tablet {
+        width: 62%;
+    }
 
     &_link {
         @extend %border-link;
         color: #282828;
-        font: bold 18px $headings_font-family;
+        font: bold 18px/1.8 $headings_font-family;
         margin: 0 37px 0 0;
+        @include tablet {
+            font-size: 16px;
+            margin-right: 15px;
+        }
 
         &:hover {
             color: #0067d1;

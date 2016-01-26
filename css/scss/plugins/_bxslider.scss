@@ -21,6 +21,9 @@
 	margin: 10px 10px 0 0 !important;
 	padding: 0;
 	*zoom: 1;
+    @include media(620px) {
+        display: none;
+    }
 }
 
 .bx-wrapper img {

@@ -1,10 +1,21 @@
 ﻿.login {
     float: right;
+    @include tablet {
+        position: absolute;
+        top: 15px;
+        right: 74px;
+    }
 
     &_link {
         @extend %fake-link;
         color: #fff;
         position: relative;
+        @include tablet {
+            @include invisible-text;
+            display: inline-block;
+            line-height: 19px;
+            vertical-align: middle;
+        }
 
         &:before {
             content: "";

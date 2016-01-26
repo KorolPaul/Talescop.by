@@ -5,11 +5,18 @@
     &_section {
         color: #fff;
         width: 23.7%;
-        height: 230px;
+        min-height: 230px;
         position: relative;
         margin: 0 0 20px;
         float: left;
         transition: .2s ease opacity;
+        overflow: hidden;
+        @include media(700px) {
+            width: 50%;
+        }
+        @include mobile {
+            width: 100%;
+        }
 
         &:hover {
             color: #fff;
@@ -17,11 +24,14 @@
         }
         &__big {
             float: left;
-            margin: 0 20px 0 0;
+            margin: 0 1.5% 20px 0;
             height: 480px;
             width: 74.5%;
             box-sizing: border-box;
             padding: 80px 28px;
+            @include media(700px) {
+                width: 100%;
+            }
 
             &:hover {
                 opacity: 1;
@@ -33,7 +43,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        min-width: 100%;
         min-height: 100%;
         z-index: -1;
     }
@@ -62,6 +72,10 @@
         display: inline-block;
         margin: 0 0 10px;
         transition: .2s ease opacity;
+        @include tablet {
+            font-size: 50px;
+            line-height: 1;
+        }
 
         &:hover {
             opacity: .8;
@@ -82,6 +96,7 @@
         margin: 0 40px 0 0;
         color: #fff;
         position: relative;
+        white-space: nowrap;
 
         &:hover {
             color: $link_color__green;

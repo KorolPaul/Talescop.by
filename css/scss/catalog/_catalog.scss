@@ -1,4 +1,13 @@
 ﻿.catalog {
     @extend %clearfix;
-    margin: 0 -27px 0 0;
+    margin: 0 -3% 0 0;
+
+    &__wide {
+        margin-right: -2%;
+    }
+    &__small {
+        @include tablet {
+            display: none;
+        }
+    }
 }

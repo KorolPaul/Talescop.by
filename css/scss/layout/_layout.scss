@@ -54,6 +54,9 @@ th {
     padding: 15px 10px 15px 15px;
     vertical-align: top;
     text-align: left;
+    @include tablet {
+        padding: 10px 5px 10px 10px;
+    }
 }
 th {
     background: #fafafa;
@@ -66,4 +69,31 @@ tbody tr:first-child td {
 }
 p {
     margin: 0 0 20px;
+}
+
+
+.metrics {
+    display: none;
+}
+.cart-total td {
+    border:none;
+}
+.main-bottom_heading-h3{
+    margin: 0 0 20px;
+    display: inline-block;
+    color: #000;
+    font: bold 30px "Roboto Slab", serif;
+}
+.blog_article_main {
+    border:none;
+    padding: 10px 0 15px;
+}
+.blog__big .main-bottom_heading-h3 {
+    margin: 0 0 30px;
+}
+.dashed-link {
+    border-bottom: 1px dashed;
+}
+.slider_images_box {
+    margin: 10px 0px 0px -5px;
 }

@@ -9,14 +9,24 @@
     &_bottom {
         @extend %clearfix;
         padding: 30px 0 65px;
+        @include tablet {
+            padding-bottom: 20px;
+        }
     }
     &_newsletter {
         float: left;
+        @include tablet {
+            width: 100%;
+            text-align: center;
+        }
     }
     &_newsletter-label {
         color: #dbdbdb;
         font-size: 18px;
         vertical-align: middle;
+        @include tablet {
+            display: none;
+        }
     }
     &_newsletter-input[type] {
         background: #afafaf;
@@ -25,6 +35,13 @@
         height: 17px;
         width: 280px;
         vertical-align: middle;
+        @include media($layout_width) {
+            width: 180px;
+        }
+        @include mobile {   
+            margin: 0 0 10px;
+            width: 90%;
+        }
     }
     &_newsletter-button[type] {
         color: #fff;
@@ -41,6 +58,15 @@
     &_copyright {
         float: left;
         margin: 8px 0 0;
+        @include tablet {   
+            margin-right: 40px;
+            margin-bottom: 20px;
+            width: 60%;
+        }
+        @include mobile {   
+            margin: 0 0 10px;
+            width: 100%;
+        }
 
         p {
             color: #a0a0a0;
@@ -60,6 +86,13 @@
         float: right;
         margin: 0 0 0 16%;
         line-height: 0;
+        @include media($layout_width) {
+            margin-left: 8%;
+        }
+        @include tablet {
+            float: left;
+            margin: 0 0 20px;
+        }
 
         a {
             opacity: .8;
@@ -71,7 +104,10 @@
     }
     &_contacts {
         float: right;
-        margin: 0 0 0 10%;
+        margin: 0 0 0 35px;
+        @include tablet {
+            display: none;
+        }
     }
     &_phone {
         color: #fefefe;
@@ -105,6 +141,9 @@
         margin: 12px 0 0;
         float: right;
         position: relative;
+        @include tablet {
+            display: none;    
+        }
 
         &:hover {
             color: #fff;
@@ -117,5 +156,8 @@
     }
     img {
         display: block;
+        @include mobile {
+            display: none;
+        }
     }
 }

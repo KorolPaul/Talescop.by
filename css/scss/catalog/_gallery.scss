@@ -2,6 +2,15 @@
     float: left;
     margin: 25px 0;
     width: 50%;
+    @include media($layout_width) {
+        width: 55%;
+    }
+    @include tablet {
+        float: none;
+        margin: auto;
+        width: 410px;
+        text-align: center;
+    }
 
     &__inline {
         @extend %clearfix;
@@ -12,6 +21,9 @@
         border-radius: 3px;
         float: left;
         position: relative;
+        @include media(620px) {
+            margin: auto;
+        }
 
         &:after {
             content: '';

@@ -6,12 +6,25 @@
         color: #000;
         font: bold 30px $headings_font-family;
         margin: 0 40px 0 0;
+        @include tablet {
+            display: block;
+            margin-bottom:15px;
+        }
     }
     &_link {
         @extend %border-link;
         font: bold 24px $headings_font-family;
         display: inline-block;
         margin: 0 55px 45px 0;
+        @include tablet {
+            font-size: 18px;
+            line-height: 1;
+            margin-right: 25px;
+            margin-bottom: 25px;
+        }
+        @include mobile {
+            display: none;
+        }
 
         &:hover {
             color: $link_color__green;
@@ -34,7 +47,17 @@
             }
         }
     }
+    &_heading {
+        display: none;
+        @include mobile {
+            font: bold 18px $headings_font-family;
+            display: block;
+        }
+    }
     &_content {
         display: none;
+        @include mobile {
+            display: block;
+        }
     }
 }

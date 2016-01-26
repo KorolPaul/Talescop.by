@@ -9,21 +9,56 @@ $product-big_padding: 325px;
     margin: 0 2% 20px 0;
     padding: 27px $product_padding 15px;
     position: relative;
-    width: 31%;
+    width: 30.9%;
     transition: .2s ease box-shadow;
+    @include tablet {
+        width: 46.8%;
+    }
+    @include mobile {
+        margin-right: 0;
+        width: 93%;
+    }
 
     &:hover {
         box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     }
     .catalog__wide & {
         width: 22.9%;
+        @include tablet {
+            width: 30.9%;
+        }
+        @include media(750px) {
+            width: 46.8%;
+        }
+        @include mobile {
+            margin-right: 0;
+            width: 93%;
+        }
     }
+    .catalog__small & {
+        margin-right: 0;
+        width: 100%;
+    } 
     &__big {
         padding-left: $product-big_padding;
         width: 64%;
+        @include tablet {
+            padding-left: $product_padding;
+            width: 46.8%;
+        }
 
         .catalog__wide & {
             width: 48%;
+            @include tablet {
+                width: 30.9%;
+            }
+            @include media(750px) {
+                width: 46.8%;
+            }
+            @include mobile {
+                margin-right: 0;
+                width: 93%;
+            }
         }
     }
     &__full {
@@ -31,6 +66,14 @@ $product-big_padding: 325px;
         border: none;
         height: auto;
         width: 44%;
+        @include media($layout_width) {
+            margin-right: 0;
+        }
+        @include tablet {
+            float: none;
+            clear: both;
+            width: 100%;
+        }
 
         &:hover {
             box-shadow: none;
@@ -39,11 +82,17 @@ $product-big_padding: 325px;
 
     &_image {
         display: block;
+        max-width: 100%;
 
         .product__big & {
             position: absolute;
             left: 0;
             top: 0;
+            @include tablet {
+                position: static;
+                max-height: 180px;
+                margin: auto;
+            }
         }
     }
     &_link {
@@ -54,6 +103,10 @@ $product-big_padding: 325px;
         .product__big & {
             font-size: 20px;
             line-height: 24px;
+            @include tablet {
+                font-size: 15px;
+                line-height: 20px;
+            }
         }
     }
     &_fake-link {
@@ -75,10 +128,18 @@ $product-big_padding: 325px;
         &__out {
             background: #dfdfdf;
         }
+        .product__full & {
+            font-size: 13px;
+        }
     }
     &_order-time {
         font-size: 11px;
         vertical-align: -4px;
+
+        .product__full & {
+            font-size: 12px;
+            vertical-align: -4px;
+        }
     }
     &_specs {
         font-size: 12px;
@@ -120,6 +181,9 @@ $product-big_padding: 325px;
 
         .product__big & {
             left: $product-big_padding;
+            @include tablet {
+                left: inherit;
+            }
         }
         .product__full & {
             position: static;

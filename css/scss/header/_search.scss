@@ -2,10 +2,18 @@
     float: right;
     margin: 8px 0 0;
     position: relative;
+    @include tablet {
+        clear: both;
+        width: 100%;
+    }
 
     &_input {
         padding-right: 40px; 
         width: 285px;
+        @include tablet {
+            box-sizing: border-box;
+            width: 100%;
+        }
     }
     &_icon {
         @include invisible-text;

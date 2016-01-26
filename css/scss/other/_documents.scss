@@ -2,11 +2,19 @@
     @extend %clearfix;
     
     &_item {
+        box-sizing: border-box;
         float: left;
         list-style: none;
         padding: 0 100px 30px 40px;
         position: relative;
-        width: 275px;
+        width: 50%;
+        @include tablet {
+            padding-right: 40px;
+            
+        }
+        @include mobile {
+            width: 100%;
+        }
     }
     &_icon {
         @include invisible-text;

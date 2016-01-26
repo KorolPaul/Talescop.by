@@ -22,13 +22,9 @@
 @import "layout/page";
 @import "layout/pages";
 @import "layout/breadcrumbs";
-@import "layout/main-banner";
-@import "layout/main-bottom";
 @import "layout/article";
 @import "layout/categories";
 @import "layout/tabs";
-@import "layout/about";
-@import "layout/caption";
 
 /*Header*/
 @import "header/header";
@@ -54,6 +50,10 @@
 
 /*Other*/
 @import "other/documents";
+@import "other/main-banner";
+@import "other/main-bottom";
+@import "other/about";
+@import "other/caption";
 
 /*Catalog*/
 @import "catalog/catalog";

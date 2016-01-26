@@ -4,6 +4,12 @@
     border-left: 1px solid #686869;
     padding: 0 0 0 20px;
     margin: 0 0 0 20px;
+    @include tablet {
+        @include invisible-text;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
 
     &_icon {
         @include invisible-text;

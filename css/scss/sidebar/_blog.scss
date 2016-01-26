@@ -1,7 +1,13 @@
 ﻿.blog {
-    
+    @include tablet {
+        display: none;    
+    }
+
     &__products {
         margin: 65px 0 0;
+        @include tablet {
+            display: block;    
+        }
     }
     &_title {
         font: bold 15px/21px $headings_font-family;
@@ -39,6 +45,19 @@
                 line-height: 22px;
             }
         }
+        .blog__products & {
+            float: left;
+            margin: 0 3% 20px 0;
+            width: 30%;
+            @include tablet {
+                margin-right: 5%; 
+                width: 45%;
+            }
+            @include mobile {
+                margin-right: 0; 
+                width: 100%;
+            }
+        }
         p:not([class]) {
             line-height: 18px;
             margin: 8px 0 5px;
@@ -50,9 +69,11 @@
         }
         img {
             margin: 10px 0 12px;
+            max-width: 100%;
 
             .blog__products & {
-                margin: 0;
+                display: block;
+                margin: 0 0 10px;
             }
         }
     }

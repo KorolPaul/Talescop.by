@@ -2,11 +2,20 @@
     background: $sidebar_background;
     margin: 0 0 40px;
     padding: 10px $sidebar_horisontal-padding;
+    @include tablet {
+        display: none;    
+    }
 
     &__inline{
         background: transparent;
         margin: 0 -5% 0 0;
         padding: 0;
+        @include tablet {
+            display: block;    
+        }
+        @include media(700px) {
+            display: none;
+        }
     }
 }
 .advantage {
@@ -24,6 +33,9 @@
 
         p {
             margin: 6px 0 0 90px;
+            @include tablet {
+                margin-left: 70px;
+            }
         }
         &:before {
             content: none;

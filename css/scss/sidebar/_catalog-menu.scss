@@ -2,6 +2,9 @@
     background: $sidebar_background;
     margin: 0 0 40px;
     padding: $sidebar_padding;
+    @include tablet {
+        display: none;    
+    }
 
     &_title {
         cursor: pointer;

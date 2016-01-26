@@ -1,5 +1,8 @@
 ﻿.menu {
     float: left;
+    @include tablet {
+        margin: 0 100px 0 0;
+    }
 
     &_list > li {
         list-style: none;

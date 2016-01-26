@@ -1,4 +1,11 @@
 ﻿.banner {
     display: block;
     margin: -20px 0 0;
+    @include media(750px) {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }

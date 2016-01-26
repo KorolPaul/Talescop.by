@@ -21,6 +21,12 @@
     }
     &_content {
         padding: 0 0 0 20px;
+        @include media(750px) { 
+            width: 60%;
+        }
+        @include mobile { 
+            width: auto;
+        }
     }
     &_section {
         border-bottom: 1px solid #ebeef3;
@@ -38,6 +44,12 @@
         font-weight: bold;
         padding: 5px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset;
+        @include media($layout_width) {
+            width: 30%;
+        }
+        @include media(750px) { 
+            width: 77px;
+        }
     }
     &_input__left {
         text-align: right;

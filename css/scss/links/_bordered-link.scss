@@ -2,4 +2,8 @@
     border: 1px dashed #dbdfe5;
     border-radius: 3px;
     padding: 10px 25px 11px;
+    white-space: nowrap;
+    @include tablet {
+        padding: 7px 10px 8px;
+    }
 }
