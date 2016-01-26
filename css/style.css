@@ -752,6 +752,12 @@ p {
   margin: 10px 0px 0px -5px;
 }
 
+@media all and (max-width: 479px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
 .holder {
   margin: auto;
   max-width: 1180px;

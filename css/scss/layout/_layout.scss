@@ -97,3 +97,8 @@ p {
 .slider_images_box {
     margin: 10px 0px 0px -5px;
 }
+.mobile-hidden {
+    @include mobile {
+        display: none;
+    }
+}
