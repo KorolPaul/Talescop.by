@@ -38,7 +38,7 @@
         @include media($layout_width) {
             width: 180px;
         }
-        @include mobile {   
+        @include mobile {
             margin: 0 0 10px;
             width: 90%;
         }
@@ -58,12 +58,12 @@
     &_copyright {
         float: left;
         margin: 8px 0 0;
-        @include tablet {   
+        @include tablet {
             margin-right: 40px;
             margin-bottom: 20px;
             width: 60%;
         }
-        @include mobile {   
+        @include mobile {
             margin: 0 0 10px;
             width: 100%;
         }
@@ -122,7 +122,7 @@
 
         &:before {
             content: "";
-            background: url(../img/marker.png) no-repeat;
+            background: url(../image/marker.png) no-repeat;
             height: 20px;
             width: 13px;
             position: absolute;
@@ -142,7 +142,7 @@
         float: right;
         position: relative;
         @include tablet {
-            display: none;    
+            display: none;
         }
 
         &:hover {

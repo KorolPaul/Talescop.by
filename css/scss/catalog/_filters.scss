@@ -1,5 +1,8 @@
 ﻿.filters {
     margin: 0 0 25px 0;
+    @include mobile {
+        display: none;
+    }
 
     &_section-title {
         @extend %heading5;

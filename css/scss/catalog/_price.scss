@@ -11,14 +11,14 @@
 
     &:after {
         content: '';
-        background: #3aa672 url(../img/cart-light.png) no-repeat center center;
+        background: #3aa672 url(../image/cart-light.png) no-repeat center center;
         position: absolute;
         right: 10px;
         top: 0;
         bottom: 0;
         width: 40px;
         z-index: -1;
-        transition: .3s ease-out right;            
+        transition: .3s ease-out right;
     }
     &:hover:after,
     .product__full &:after {
@@ -28,7 +28,7 @@
     &_value {
         font: bold 20px $default_font-family;
 
-        .product__full & { 
+        .product__full & {
             font-size: 24px;
         }
     }
@@ -52,5 +52,3 @@
         display: inline-block;
     }
 }
-
-    

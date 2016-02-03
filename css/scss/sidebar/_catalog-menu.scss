@@ -2,15 +2,17 @@
     background: $sidebar_background;
     margin: 0 0 40px;
     padding: $sidebar_padding;
-    @include tablet {
-        display: none;    
+    
+    &_list {
+      margin-top:5px;
     }
 
     &_title {
-        cursor: pointer;
-        font: bold 18px $default_font-family;
-        margin: 0 0 10px;
-        position: relative;
+            font: bold 18px Arial, Helvetica;
+            margin: 0 0 10px;
+            color: #000;
+            cursor: pointer;
+            position: relative;
 
         &:after {
             content: '';
@@ -23,6 +25,7 @@
             vertical-align: middle;
         }
     }
+
     &_link {
         color: $default_color;
         display: inline-block;

@@ -23,7 +23,7 @@
         text-decoration: none;
         transition: .2s ease color;
 
-        &:hover, 
+        &:hover,
         &__active {
             color: $link_color__green;
         }
@@ -33,7 +33,7 @@
 
             &:after {
                 content: "";
-                background: url(../img/arrow-down.png) no-repeat;
+                background: url(../image/arrow-down.png) no-repeat;
                 padding: 2px 3px;
                 position: absolute;
                 right: -13px;

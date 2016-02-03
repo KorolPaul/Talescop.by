@@ -1,18 +1,10 @@
 ﻿.breadcrumbs {
     font-size: 12px;
 
-    &_link {
+   &_link {
         @extend %border-link;
         color: $default_color;
-        margin: 0 15px 0 0;
         position: relative;
-
-        &:after {
-            content: "/";
-            position: absolute;
-            right: -9px;
-            top: -3px;
-        }
     }
     &_page {
         color: #b7b7b7;

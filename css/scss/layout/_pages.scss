@@ -1,6 +1,35 @@
 ﻿.pages {
     padding: 15px 0 30px;
 
+    a {
+        border-radius: 3px;
+        display: inline-block;
+        padding: 7px;
+        font-size: 18px;
+        margin: 0 2px;
+        min-width: 18px;
+        text-align: center;
+    }
+    b {
+        border-radius: 3px;
+        display: inline-block;
+        padding: 7px;
+        font-size: 18px;
+        margin: 0 2px;
+        min-width: 18px;
+        text-align: center;
+        background: #fbda2d;
+        color: #000;
+    }
+    b:hover {
+        background: #fbda2d;
+        text-decoration: none;
+        color: #000;
+    }
+    .results {
+        display:none;
+    }
+
     &_link {
         border-radius: 3px;
         display: inline-block;

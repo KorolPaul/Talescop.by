@@ -2,8 +2,8 @@
     background: $sidebar_background;
     margin: 0 0 40px;
     padding: 10px $sidebar_horisontal-padding;
-    @include tablet {
-        display: none;    
+    @include media(750px) {
+        display: none;
     }
 
     &__inline{
@@ -11,7 +11,7 @@
         margin: 0 -5% 0 0;
         padding: 0;
         @include tablet {
-            display: block;    
+            display: block;
         }
         @include media(700px) {
             display: none;
@@ -61,16 +61,16 @@
         height: 55px;
 
         &__recomendations {
-            background-image: url(../img/advantages/recomendations.png);
+            background-image: url(../image/advantages/recomendations.png);
         }
         &__warranty {
-            background-image: url(../img/advantages/warranty.png);
+            background-image: url(../image/advantages/warranty.png);
         }
         &__delivery {
-            background-image: url(../img/advantages/delivery.png);
+            background-image: url(../image/advantages/delivery.png);
         }
         &__stock {
-            background-image: url(../img/advantages/stock.png);
+            background-image: url(../image/advantages/stock.png);
         }
 
         .advantages__inline & {

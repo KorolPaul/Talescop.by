@@ -5,29 +5,37 @@
 
     &_star {
         @include invisible-text;
-        cursor: pointer;
-        background: url(../img/star.png) no-repeat;
-        display: inline-block;
-        margin: 0 2px 0 0;
-        height: 14px;
-        width: 14px;
-        filter: grayscale(100%);
-        vertical-align: middle;
-        transition: filter .2s ease;
+          background: url(../image/star.png) no-repeat;
+          display: inline-block;
+          margin: 0 2px 0 0;
+          height: 14px;
+          width: 14px;
+          -webkit-filter: grayscale(100%);
+                  filter: grayscale(100%);
+          vertical-align: middle;
 
-        &:hover {
-            filter: brightness(1.5);
-        }
         &__filled {
-            filter: none;
+          -webkit-filter: none;
+                  filter: none;
         }
     }
+
     &_total {
         @include inline-block-optimized;
         display: inline-block;
         margin: 0 0 0 2px;
         vertical-align: middle;
         font-size: 12px;
+
+        a {
+          color:#727272;
+          border-bottom:1px dotted #727272;
+          text-decoration: none;
+        }
+        a:hover{
+          color:#727272;
+          border: none;
+        }
     }
 
     .product__full & {

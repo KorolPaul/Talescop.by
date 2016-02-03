@@ -1,6 +1,6 @@
 ﻿.documents {
     @extend %clearfix;
-    
+
     &_item {
         box-sizing: border-box;
         float: left;
@@ -10,7 +10,7 @@
         width: 50%;
         @include tablet {
             padding-right: 40px;
-            
+
         }
         @include mobile {
             width: 100%;
@@ -27,13 +27,13 @@
         position: absolute;
 
         &__text {
-            background-image: url(../img/documents/text.png);
+            background-image: url(../image/documents/text.png);
         }
         &__table {
-            background-image: url(../img/documents/table.png);
+            background-image: url(../image/documents/table.png);
         }
         &__pdf {
-            background-image: url(../img/documents/pdf.png);
+            background-image: url(../image/documents/pdf.png);
         }
     }
     &_size {

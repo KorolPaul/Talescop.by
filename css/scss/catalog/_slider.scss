@@ -2,14 +2,16 @@
     @include media(620px) {
         display: none;
     }
+
     &_link {
-        border: 1px solid $input_border-color;
-        display: block;
-        padding: 5px;
-        margin: 8px 0;
+      padding: 5px;
+      margin: 8px 0;
+      text-decoration: none;
     }
     &_image {
-        cursor: pointer; 
-        width: 68px;
+      cursor: pointer;
+      width: 68px;
+      border: 1px solid #e7ebec;
     }
+
 }

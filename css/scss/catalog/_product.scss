@@ -5,7 +5,7 @@ $product-big_padding: 325px;
     box-sizing: border-box;
     border: 1px solid $input_border-color;
     float: left;
-    height: 510px;
+    height: 590px;
     margin: 0 2% 20px 0;
     padding: 27px $product_padding 15px;
     position: relative;
@@ -38,7 +38,7 @@ $product-big_padding: 325px;
     .catalog__small & {
         margin-right: 0;
         width: 100%;
-    } 
+    }
     &__big {
         padding-left: $product-big_padding;
         width: 64%;
@@ -125,6 +125,9 @@ $product-big_padding: 325px;
         padding: 0px 5px;
         vertical-align: -4px;
 
+        &__storage {
+            background: #cfd4b4;
+        }
         &__out {
             background: #dfdfdf;
         }
@@ -152,6 +155,9 @@ $product-big_padding: 325px;
             line-height: 18px;
         }
     }
+    &   -string {
+        white-space: nowrap;
+    }
     &_specs-value {
         color: $heading_color;
     }
@@ -172,10 +178,11 @@ $product-big_padding: 325px;
             font-size: 12px;
         }
     }
+
     &_old-price {
         position: absolute;
         left: 23px;
-        bottom: 80px;
+        bottom: 65px;
         text-decoration: line-through;
         color: #ff0000;
 
@@ -191,33 +198,35 @@ $product-big_padding: 325px;
             margin: 0 0 10px;
         }
     }
+
     &_flag {
-        position: absolute;
-        top: 15px;
-        left: 0;
-        background: #fc9e2f;
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 8px 1px 8px 5px;
+            position: absolute;
+            top: 15px;
+            left: 0;
+            background: #ff3c65;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 1px 8px 5px;
 
         &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 100%;
-            border-style: solid;
-            border-width: 18px 18px 18px 8px;
-            border-color: transparent transparent transparent #fc9e2f;
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 100%;
+              border-style: solid;
+              border-width: 18px 18px 18px 8px;
+              border-color: transparent transparent transparent #ff3c65;
         }
         &__hit {
-            background: #ff3c65;
+            background: #fc9e2f;
 
             &:after {
-                border-left-color: #ff3c65;
+                border-left-color: #fc9e2f;
             }
         }
     }
+
     &_subtitle {
         font-size: 15px;
         margin: 0;
