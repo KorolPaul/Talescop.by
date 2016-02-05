@@ -11,6 +11,9 @@
         width: 410px;
         text-align: center;
     }
+    @include mobile {
+        width: 100%;
+    }
 
     &__inline {
         @extend %clearfix;
@@ -38,6 +41,9 @@
         &:hover:after {
             filter: grayscale(100%);
         }
+    }
+    &_image {
+        max-width: 100%;
     }
     &_thumbnail {
         float: left;

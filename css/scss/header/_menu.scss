@@ -3,12 +3,39 @@
     @include tablet {
         margin: 0 100px 0 0;
     }
+    @include media($tablet-small) {
+        padding: 15px;
+    }
 
-    &_list > li {
-        list-style: none;
-        float: left;
-        margin: 0 30px 0 0;
-        position: relative;
+    &_list {
+        @include media($tablet-small) {
+            display: none;
+            border-top: 1px solid #808080;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 53px;
+            z-index: 10;
+        }
+
+        & > li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            position: relative;
+            @include media($tablet-small) {
+                float: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+    &_blog {
+        background: #4f4f4f;
     }
     &_sublist {
         display: none;
@@ -22,6 +49,13 @@
         border-bottom: 1px solid;
         text-decoration: none;
         transition: .2s ease color;
+        @include media($tablet-small) {
+            display: block;
+            padding: 10px 22px;
+            background: #282828;
+            border-color: #808080;
+            font-size: 16px;
+        }
 
         &:hover,
         &__active {
@@ -42,6 +76,15 @@
             &:hover:after {
                 background-position: 0 -7px;
             }
+        }
+    }
+    &_icon {
+        display: none;
+        @include media($tablet-small) {
+            display: inline-block;
+            color: #fff;
+            font-size: 22px;
+            text-decoration: none;
         }
     }
 }

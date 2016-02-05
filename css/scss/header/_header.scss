@@ -3,7 +3,6 @@
     &_top {
         @extend %clearfix;
         background: #282828;
-        padding: 15px 0;
     }
     &_center {
         @extend %clearfix;
@@ -33,10 +32,22 @@
         color: #616161;
         line-height: 18px;
         margin: 12px 0 0;
-        @include media(750px) {
+        @include media($tablet-small) {
             display: none;
         }
 
+    }
+    &_delivery-link {
+        @extend fake-link;
+        position: relative;
+
+        &:after {
+            content: '▾';
+            font-size: 14px;
+            position: absolute;
+            top: 0px;
+            right: -16px;
+        }
     }
     &_phones {
         float: right;

@@ -1,14 +1,29 @@
 ﻿.price {
+    border-radius: 4px;
     background: #ffefbb;
     color: $heading_color;
     display: inline-block;
-    font: bold 14px $default_font-family;
+    font: 14px $default_font-family;
     padding: 7px 12px 6px;
     text-decoration: none;
     position: absolute;
     bottom: 25px;
     left: $product_padding;
+    transition: .2s ease all;
 
+    &:hover {
+        background-color: #ffeca9;
+        color: $heading_color;
+        border-radius: 4px 0 0 4px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 40px;
+    }
     &:after {
         content: '';
         background: #3aa672 url(../image/cart-light.png) no-repeat center center;

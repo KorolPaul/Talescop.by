@@ -9,6 +9,11 @@
             display: block;    
         }
     }
+    &__big {
+        @include tablet {
+            display: block;    
+        }
+    }
     &_title {
         font: bold 15px/21px $headings_font-family;
         display: inline-block;
@@ -25,6 +30,9 @@
         @extend %button-link;
         float: right;
         margin: 1px 0 0 20px;
+        @include media($tablet-small) {
+            display: none;
+        }
     }
     &_date {
         color: #b4b4b4;

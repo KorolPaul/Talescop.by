@@ -12,10 +12,12 @@
         }
     }
     &_link {
-        @extend %border-link;
-        font: bold 24px $headings_font-family;
+        border-radius: 3px;
+        font: bold 24px/20px $headings_font-family;
         display: inline-block;
         margin: 0 55px 45px 0;
+        text-decoration: none;
+        border-bottom: 1px dotted;
         @include tablet {
             font-size: 18px;
             line-height: 1;
@@ -27,23 +29,24 @@
         }
 
         &:hover {
-            color: $link_color__green;
+            color: #3aa672;
         }
         &__active,
         &__active:hover {
+            border: none;
             color: #000;
             border: none;
             cursor: default;
         }
         .tabs__small & {
-            font: normal 18px $default_font-family;
+            font: normal 18px/18px $default_font-family;
             margin-right: 25px;
             margin-bottom: 25px;
 
             &__active,
             &__active:hover {
                 background: #fbda2d;
-                padding: 4px 8px 5px;
+                padding: 9px 8px 10px;
             }
         }
     }

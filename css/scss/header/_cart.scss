@@ -3,9 +3,10 @@
     float: right;
     border-left: 1px solid #686869;
     padding: 0 0 0 20px;
-    margin: 0 0 0 20px;
+    margin: 15px 0 0 20px;
     @include tablet {
         @include invisible-text;
+        margin-top: 0;
         position: absolute;
         top: 15px;
         right: 20px;
@@ -21,12 +22,11 @@
         vertical-align: middle;
     }
     &_link {
-        @extend %fake-link;
         color: #fff;
         font-weight: bold;
 
         &:hover {
-            color: #ccc;
+            color: $link_color__hover;
         }
     }
     &_total {

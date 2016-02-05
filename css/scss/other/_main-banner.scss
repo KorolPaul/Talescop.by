@@ -11,6 +11,7 @@
         float: left;
         transition: .2s ease opacity;
         overflow: hidden;
+        opacity: .9;
         @include media(700px) {
             width: 50%;
         }
@@ -20,7 +21,7 @@
 
         &:hover {
             color: #fff;
-            opacity: .8;
+            opacity: 1;
         }
         &__big {
             float: left;
@@ -29,12 +30,9 @@
             width: 74.5%;
             box-sizing: border-box;
             padding: 80px 28px;
+            opacity: 1;
             @include media(700px) {
                 width: 100%;
-            }
-
-            &:hover {
-                opacity: 1;
             }
         }
         
@@ -51,6 +49,7 @@
         position: absolute;
         top: 28px;
         left: 28px;
+        border-radius: 2px;
         padding: 2px 5px;
         font-weight: bold;
         text-transform: uppercase;
@@ -68,22 +67,23 @@
     &_heading {
         color: #fff;
         border-bottom: 1px solid rgba(255, 255, 255, .5);
-        font: bold 70px/64px $headings_font-family;
-        display: inline-block;
-        margin: 0 0 10px;
-        transition: .2s ease opacity;
+        font: bold 68px/62px $headings_font-family;
+        
+        transition: .2s ease color;
+        text-decoration: none;
         @include tablet {
             font-size: 50px;
             line-height: 1;
         }
 
         &:hover {
-            opacity: .8;
+            color: $link_color__green;
         }
     }
     &_text {
         font-size: 17px;
         line-height: 24px;
+        margin-top: 30px;
         @include mobile {
             display: none;
         }

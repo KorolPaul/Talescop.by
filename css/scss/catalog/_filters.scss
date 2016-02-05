@@ -24,7 +24,7 @@
     }
     &_content {
         padding: 0 0 0 20px;
-        @include media(750px) { 
+        @include media($tablet-small) { 
             width: 60%;
         }
         @include mobile { 
@@ -50,7 +50,7 @@
         @include media($layout_width) {
             width: 30%;
         }
-        @include media(750px) { 
+        @include media($tablet-small) { 
             width: 77px;
         }
     }

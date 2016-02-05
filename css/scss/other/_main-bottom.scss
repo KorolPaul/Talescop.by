@@ -5,10 +5,16 @@
     &_left {
         float: left;
         width: 63%;
+        @include media($tablet-small) {
+            width: 100%;
+        }
     }
     &_right {
         float: right;
         width: 32%;
+        @include media($tablet-small) {
+            width: 100%;
+        }
     }
     &_heading {
         font-size: 30px;

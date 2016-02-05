@@ -52,7 +52,7 @@
         vertical-align: middle;
 
         &:hover {
-            background: #555;
+            background: #000;
         }
     }
     &_copyright {
@@ -79,7 +79,7 @@
         color: #fff;
 
         &:hover {
-            color: #ccc;
+            color: $link_color__hover;
         }
     }
     &_social {

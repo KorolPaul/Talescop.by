@@ -3,9 +3,10 @@ $product-big_padding: 325px;
 
 .product {
     box-sizing: border-box;
-    border: 1px solid $input_border-color;
+    border-radius: 5px;
+    border: 1px solid rgba(231, 235, 236, .8);
     float: left;
-    height: 590px;
+    height: 600px;
     margin: 0 2% 20px 0;
     padding: 27px $product_padding 15px;
     position: relative;
@@ -27,7 +28,7 @@ $product-big_padding: 325px;
         @include tablet {
             width: 30.9%;
         }
-        @include media(750px) {
+        @include media($tablet-small) {
             width: 46.8%;
         }
         @include mobile {
@@ -52,7 +53,7 @@ $product-big_padding: 325px;
             @include tablet {
                 width: 30.9%;
             }
-            @include media(750px) {
+            @include media($tablet-small) {
                 width: 46.8%;
             }
             @include mobile {
@@ -78,6 +79,9 @@ $product-big_padding: 325px;
         &:hover {
             box-shadow: none;
         }
+    }
+    &__short {
+        height: 420px;
     }
 
     &_image {
@@ -155,7 +159,7 @@ $product-big_padding: 325px;
             line-height: 18px;
         }
     }
-    &   -string {
+    &_stock-string {
         white-space: nowrap;
     }
     &_specs-value {
@@ -171,7 +175,7 @@ $product-big_padding: 325px;
     &_description {
         color: #878686;
         font-size: 11px;
-        line-height: 14px;
+        line-height: 15px;
         margin: 10px 0 35px;
 
         .product__big & {
@@ -202,13 +206,13 @@ $product-big_padding: 325px;
     &_flag {
             position: absolute;
             top: 15px;
-            left: 0;
+            left: -3px;
             background: #ff3c65;
             color: #fff;
             font-size: 18px;
             font-weight: bold;
             padding: 8px 1px 8px 5px;
-
+            border-radius: 3px;
         &:after {
               content: '';
               position: absolute;

@@ -2,7 +2,7 @@
     background: $sidebar_background;
     margin: 0 0 40px;
     padding: 10px $sidebar_horisontal-padding;
-    @include media(750px) {
+    @include media($tablet-small) {
         display: none;
     }
 
@@ -75,7 +75,7 @@
 
         .advantages__inline & {
             float: left;
-            width: 55px;
+            width: 56px;
         }
     }
 }
