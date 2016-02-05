@@ -1776,6 +1776,12 @@ h5,
   padding-top: 25px;
 }
 
+@media all and (max-width: 750px) {
+  .sidebar__indent {
+    padding: 0;
+  }
+}
+
 .catalog-menu {
   background: #fafafa;
   margin: 0 0 40px;

@@ -19,5 +19,8 @@
     }
     &__indent {
         padding-top: 25px;
+        @include media($tablet-small) {
+            padding: 0;
+        }
     }
 }
