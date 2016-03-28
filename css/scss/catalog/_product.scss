@@ -47,6 +47,9 @@ $product-big_padding: 325px;
             padding-left: $product_padding;
             width: 46.8%;
         }
+        @include mobile {
+            width: 93%;
+        }
 
         .catalog__wide & {
             width: 48%;

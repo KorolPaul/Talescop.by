@@ -172,3 +172,10 @@ p {
         display: none;
     }
 }
+.pluso {
+    margin-bottom: 25px;
+
+    @include media($tablet-small) {
+        display: none !important;
+    }
+}

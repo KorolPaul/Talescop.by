@@ -839,6 +839,16 @@ p {
   }
 }
 
+.pluso {
+  margin-bottom: 25px;
+}
+
+@media all and (max-width: 750px) {
+  .pluso {
+    display: none !important;
+  }
+}
+
 .holder {
   margin: auto;
   max-width: 1180px;
@@ -2617,6 +2627,12 @@ h5,
   .product__big {
     padding-left: 23px;
     width: 46.8%;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .product__big {
+    width: 93%;
   }
 }
 
